@@ -61,7 +61,7 @@ export default function App() {
         setObservations(obs);
 
         // Showcase State initialization
-        const defaultObs = obs.find(o => o.id === 'ARGO-1024');
+       const defaultObs = obs[0];
         if (defaultObs) {
           const profile = await fetchObservationProfile(defaultObs.id);
           setActiveObsProfile(profile);
