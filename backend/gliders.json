@@ -1,0 +1,3636 @@
+[
+  {
+    "id": "INCOIS-GLIDER-SLOCUM-01",
+    "mission_name": "Arabian Sea OMZ High-Res Transect",
+    "platform_type": "Teledyne Webb Slocum G3",
+    "region": "Arabian Sea Shelf-Break",
+    "start_point": {
+      "latitude": 15.0,
+      "longitude": 71.0
+    },
+    "end_point": {
+      "latitude": 16.5,
+      "longitude": 68.0
+    },
+    "status": "Active Mission",
+    "waypoints": [
+      {
+        "seq": 0,
+        "latitude": 15.0,
+        "longitude": 71.0,
+        "depth": 0.0,
+        "temperature": 30.26,
+        "salinity": 35.51,
+        "chlorophyll": 0.172,
+        "timestamp": "2026-09-08T00:00:00Z"
+      },
+      {
+        "seq": 1,
+        "latitude": 15.0084,
+        "longitude": 70.9832,
+        "depth": 100.0,
+        "temperature": 22.04,
+        "salinity": 35.42,
+        "chlorophyll": 0.398,
+        "timestamp": "2026-09-08T01:00:00Z"
+      },
+      {
+        "seq": 2,
+        "latitude": 15.0168,
+        "longitude": 70.9665,
+        "depth": 200.0,
+        "temperature": 16.23,
+        "salinity": 35.41,
+        "chlorophyll": 0.144,
+        "timestamp": "2026-09-08T02:00:00Z"
+      },
+      {
+        "seq": 3,
+        "latitude": 15.0251,
+        "longitude": 70.9497,
+        "depth": 300.0,
+        "temperature": 12.29,
+        "salinity": 35.39,
+        "chlorophyll": 0.117,
+        "timestamp": "2026-09-08T03:00:00Z"
+      },
+      {
+        "seq": 4,
+        "latitude": 15.0335,
+        "longitude": 70.933,
+        "depth": 400.0,
+        "temperature": 7.4,
+        "salinity": 35.45,
+        "chlorophyll": 0.102,
+        "timestamp": "2026-09-08T04:00:00Z"
+      },
+      {
+        "seq": 5,
+        "latitude": 15.0419,
+        "longitude": 70.9162,
+        "depth": 500.0,
+        "temperature": 7.46,
+        "salinity": 35.39,
+        "chlorophyll": 0.088,
+        "timestamp": "2026-09-08T05:00:00Z"
+      },
+      {
+        "seq": 6,
+        "latitude": 15.0503,
+        "longitude": 70.8994,
+        "depth": 600.0,
+        "temperature": 7.39,
+        "salinity": 35.42,
+        "chlorophyll": 0.118,
+        "timestamp": "2026-09-08T06:00:00Z"
+      },
+      {
+        "seq": 7,
+        "latitude": 15.0587,
+        "longitude": 70.8827,
+        "depth": 700.0,
+        "temperature": 4.79,
+        "salinity": 35.56,
+        "chlorophyll": 0.153,
+        "timestamp": "2026-09-08T07:00:00Z"
+      },
+      {
+        "seq": 8,
+        "latitude": 15.067,
+        "longitude": 70.8659,
+        "depth": 800.0,
+        "temperature": 4.7,
+        "salinity": 35.59,
+        "chlorophyll": 0.18,
+        "timestamp": "2026-09-08T08:00:00Z"
+      },
+      {
+        "seq": 9,
+        "latitude": 15.0754,
+        "longitude": 70.8492,
+        "depth": 900.0,
+        "temperature": 3.58,
+        "salinity": 35.59,
+        "chlorophyll": 0.163,
+        "timestamp": "2026-09-08T09:00:00Z"
+      },
+      {
+        "seq": 10,
+        "latitude": 15.0838,
+        "longitude": 70.8324,
+        "depth": 1000.0,
+        "temperature": 3.63,
+        "salinity": 35.59,
+        "chlorophyll": 0.121,
+        "timestamp": "2026-09-08T10:00:00Z"
+      },
+      {
+        "seq": 11,
+        "latitude": 15.0922,
+        "longitude": 70.8156,
+        "depth": 900.0,
+        "temperature": 3.61,
+        "salinity": 35.6,
+        "chlorophyll": 0.148,
+        "timestamp": "2026-09-08T11:00:00Z"
+      },
+      {
+        "seq": 12,
+        "latitude": 15.1006,
+        "longitude": 70.7989,
+        "depth": 800.0,
+        "temperature": 4.68,
+        "salinity": 35.59,
+        "chlorophyll": 0.173,
+        "timestamp": "2026-09-08T12:00:00Z"
+      },
+      {
+        "seq": 13,
+        "latitude": 15.1089,
+        "longitude": 70.7821,
+        "depth": 700.0,
+        "temperature": 4.67,
+        "salinity": 35.59,
+        "chlorophyll": 0.181,
+        "timestamp": "2026-09-08T13:00:00Z"
+      },
+      {
+        "seq": 14,
+        "latitude": 15.1173,
+        "longitude": 70.7654,
+        "depth": 600.0,
+        "temperature": 7.46,
+        "salinity": 35.4,
+        "chlorophyll": 0.076,
+        "timestamp": "2026-09-08T14:00:00Z"
+      },
+      {
+        "seq": 15,
+        "latitude": 15.1257,
+        "longitude": 70.7486,
+        "depth": 500.0,
+        "temperature": 7.47,
+        "salinity": 35.41,
+        "chlorophyll": 0.128,
+        "timestamp": "2026-09-08T15:00:00Z"
+      },
+      {
+        "seq": 16,
+        "latitude": 15.1341,
+        "longitude": 70.7318,
+        "depth": 400.0,
+        "temperature": 7.4,
+        "salinity": 35.48,
+        "chlorophyll": 0.096,
+        "timestamp": "2026-09-08T16:00:00Z"
+      },
+      {
+        "seq": 17,
+        "latitude": 15.1425,
+        "longitude": 70.7151,
+        "depth": 300.0,
+        "temperature": 12.33,
+        "salinity": 35.42,
+        "chlorophyll": 0.141,
+        "timestamp": "2026-09-08T17:00:00Z"
+      },
+      {
+        "seq": 18,
+        "latitude": 15.1508,
+        "longitude": 70.6983,
+        "depth": 200.0,
+        "temperature": 16.28,
+        "salinity": 35.42,
+        "chlorophyll": 0.177,
+        "timestamp": "2026-09-08T18:00:00Z"
+      },
+      {
+        "seq": 19,
+        "latitude": 15.1592,
+        "longitude": 70.6816,
+        "depth": 100.0,
+        "temperature": 22.09,
+        "salinity": 35.45,
+        "chlorophyll": 0.376,
+        "timestamp": "2026-09-08T19:00:00Z"
+      },
+      {
+        "seq": 20,
+        "latitude": 15.1676,
+        "longitude": 70.6648,
+        "depth": 0.0,
+        "temperature": 30.34,
+        "salinity": 35.49,
+        "chlorophyll": 0.223,
+        "timestamp": "2026-09-08T20:00:00Z"
+      },
+      {
+        "seq": 21,
+        "latitude": 15.176,
+        "longitude": 70.648,
+        "depth": 100.0,
+        "temperature": 22.04,
+        "salinity": 35.43,
+        "chlorophyll": 0.397,
+        "timestamp": "2026-09-08T21:00:00Z"
+      },
+      {
+        "seq": 22,
+        "latitude": 15.1844,
+        "longitude": 70.6313,
+        "depth": 200.0,
+        "temperature": 16.25,
+        "salinity": 35.45,
+        "chlorophyll": 0.158,
+        "timestamp": "2026-09-08T22:00:00Z"
+      },
+      {
+        "seq": 23,
+        "latitude": 15.1927,
+        "longitude": 70.6145,
+        "depth": 300.0,
+        "temperature": 12.33,
+        "salinity": 35.45,
+        "chlorophyll": 0.164,
+        "timestamp": "2026-09-08T23:00:00Z"
+      },
+      {
+        "seq": 24,
+        "latitude": 15.2011,
+        "longitude": 70.5978,
+        "depth": 400.0,
+        "temperature": 7.47,
+        "salinity": 35.42,
+        "chlorophyll": 0.09,
+        "timestamp": "2026-09-08T24:00:00Z"
+      },
+      {
+        "seq": 25,
+        "latitude": 15.2095,
+        "longitude": 70.581,
+        "depth": 500.0,
+        "temperature": 7.38,
+        "salinity": 35.42,
+        "chlorophyll": 0.11,
+        "timestamp": "2026-09-08T25:00:00Z"
+      },
+      {
+        "seq": 26,
+        "latitude": 15.2179,
+        "longitude": 70.5642,
+        "depth": 600.0,
+        "temperature": 7.44,
+        "salinity": 35.41,
+        "chlorophyll": 0.123,
+        "timestamp": "2026-09-08T26:00:00Z"
+      },
+      {
+        "seq": 27,
+        "latitude": 15.2263,
+        "longitude": 70.5475,
+        "depth": 700.0,
+        "temperature": 4.68,
+        "salinity": 35.59,
+        "chlorophyll": 0.19,
+        "timestamp": "2026-09-08T27:00:00Z"
+      },
+      {
+        "seq": 28,
+        "latitude": 15.2346,
+        "longitude": 70.5307,
+        "depth": 800.0,
+        "temperature": 4.68,
+        "salinity": 35.58,
+        "chlorophyll": 0.139,
+        "timestamp": "2026-09-08T28:00:00Z"
+      },
+      {
+        "seq": 29,
+        "latitude": 15.243,
+        "longitude": 70.514,
+        "depth": 900.0,
+        "temperature": 3.65,
+        "salinity": 35.63,
+        "chlorophyll": 0.144,
+        "timestamp": "2026-09-08T29:00:00Z"
+      },
+      {
+        "seq": 30,
+        "latitude": 15.2514,
+        "longitude": 70.4972,
+        "depth": 1000.0,
+        "temperature": 3.67,
+        "salinity": 35.65,
+        "chlorophyll": 0.135,
+        "timestamp": "2026-09-08T30:00:00Z"
+      },
+      {
+        "seq": 31,
+        "latitude": 15.2598,
+        "longitude": 70.4804,
+        "depth": 900.0,
+        "temperature": 3.61,
+        "salinity": 35.66,
+        "chlorophyll": 0.115,
+        "timestamp": "2026-09-08T31:00:00Z"
+      },
+      {
+        "seq": 32,
+        "latitude": 15.2682,
+        "longitude": 70.4637,
+        "depth": 800.0,
+        "temperature": 4.6,
+        "salinity": 35.61,
+        "chlorophyll": 0.103,
+        "timestamp": "2026-09-08T32:00:00Z"
+      },
+      {
+        "seq": 33,
+        "latitude": 15.2765,
+        "longitude": 70.4469,
+        "depth": 700.0,
+        "temperature": 4.59,
+        "salinity": 35.66,
+        "chlorophyll": 0.089,
+        "timestamp": "2026-09-08T33:00:00Z"
+      },
+      {
+        "seq": 34,
+        "latitude": 15.2849,
+        "longitude": 70.4302,
+        "depth": 600.0,
+        "temperature": 7.3,
+        "salinity": 35.44,
+        "chlorophyll": 0.14,
+        "timestamp": "2026-09-08T34:00:00Z"
+      },
+      {
+        "seq": 35,
+        "latitude": 15.2933,
+        "longitude": 70.4134,
+        "depth": 500.0,
+        "temperature": 7.28,
+        "salinity": 35.41,
+        "chlorophyll": 0.156,
+        "timestamp": "2026-09-08T35:00:00Z"
+      },
+      {
+        "seq": 36,
+        "latitude": 15.3017,
+        "longitude": 70.3966,
+        "depth": 400.0,
+        "temperature": 7.33,
+        "salinity": 35.44,
+        "chlorophyll": 0.131,
+        "timestamp": "2026-09-08T36:00:00Z"
+      },
+      {
+        "seq": 37,
+        "latitude": 15.3101,
+        "longitude": 70.3799,
+        "depth": 300.0,
+        "temperature": 12.34,
+        "salinity": 35.47,
+        "chlorophyll": 0.137,
+        "timestamp": "2026-09-08T37:00:00Z"
+      },
+      {
+        "seq": 38,
+        "latitude": 15.3184,
+        "longitude": 70.3631,
+        "depth": 200.0,
+        "temperature": 16.23,
+        "salinity": 35.47,
+        "chlorophyll": 0.132,
+        "timestamp": "2026-09-08T38:00:00Z"
+      },
+      {
+        "seq": 39,
+        "latitude": 15.3268,
+        "longitude": 70.3464,
+        "depth": 100.0,
+        "temperature": 22.06,
+        "salinity": 35.51,
+        "chlorophyll": 0.361,
+        "timestamp": "2026-09-08T39:00:00Z"
+      },
+      {
+        "seq": 40,
+        "latitude": 15.3352,
+        "longitude": 70.3296,
+        "depth": 0.0,
+        "temperature": 30.35,
+        "salinity": 35.53,
+        "chlorophyll": 0.24,
+        "timestamp": "2026-09-08T40:00:00Z"
+      },
+      {
+        "seq": 41,
+        "latitude": 15.3436,
+        "longitude": 70.3128,
+        "depth": 100.0,
+        "temperature": 22.08,
+        "salinity": 35.48,
+        "chlorophyll": 0.365,
+        "timestamp": "2026-09-08T41:00:00Z"
+      },
+      {
+        "seq": 42,
+        "latitude": 15.352,
+        "longitude": 70.2961,
+        "depth": 200.0,
+        "temperature": 16.27,
+        "salinity": 35.44,
+        "chlorophyll": 0.146,
+        "timestamp": "2026-09-08T42:00:00Z"
+      },
+      {
+        "seq": 43,
+        "latitude": 15.3603,
+        "longitude": 70.2793,
+        "depth": 300.0,
+        "temperature": 12.3,
+        "salinity": 35.42,
+        "chlorophyll": 0.106,
+        "timestamp": "2026-09-08T43:00:00Z"
+      },
+      {
+        "seq": 44,
+        "latitude": 15.3687,
+        "longitude": 70.2626,
+        "depth": 400.0,
+        "temperature": 7.34,
+        "salinity": 35.43,
+        "chlorophyll": 0.112,
+        "timestamp": "2026-09-08T44:00:00Z"
+      },
+      {
+        "seq": 45,
+        "latitude": 15.3771,
+        "longitude": 70.2458,
+        "depth": 500.0,
+        "temperature": 7.37,
+        "salinity": 35.46,
+        "chlorophyll": 0.107,
+        "timestamp": "2026-09-08T45:00:00Z"
+      },
+      {
+        "seq": 46,
+        "latitude": 15.3855,
+        "longitude": 70.2291,
+        "depth": 600.0,
+        "temperature": 7.27,
+        "salinity": 35.44,
+        "chlorophyll": 0.145,
+        "timestamp": "2026-09-08T46:00:00Z"
+      },
+      {
+        "seq": 47,
+        "latitude": 15.3939,
+        "longitude": 70.2123,
+        "depth": 700.0,
+        "temperature": 4.55,
+        "salinity": 35.6,
+        "chlorophyll": 0.085,
+        "timestamp": "2026-09-08T47:00:00Z"
+      },
+      {
+        "seq": 48,
+        "latitude": 15.4022,
+        "longitude": 70.1955,
+        "depth": 800.0,
+        "temperature": 4.57,
+        "salinity": 35.63,
+        "chlorophyll": 0.098,
+        "timestamp": "2026-09-08T48:00:00Z"
+      },
+      {
+        "seq": 49,
+        "latitude": 15.4106,
+        "longitude": 70.1788,
+        "depth": 900.0,
+        "temperature": 3.7,
+        "salinity": 35.62,
+        "chlorophyll": 0.12,
+        "timestamp": "2026-09-08T49:00:00Z"
+      },
+      {
+        "seq": 50,
+        "latitude": 15.419,
+        "longitude": 70.162,
+        "depth": 1000.0,
+        "temperature": 3.79,
+        "salinity": 35.69,
+        "chlorophyll": 0.111,
+        "timestamp": "2026-09-08T50:00:00Z"
+      },
+      {
+        "seq": 51,
+        "latitude": 15.4274,
+        "longitude": 70.1453,
+        "depth": 900.0,
+        "temperature": 3.71,
+        "salinity": 35.67,
+        "chlorophyll": 0.099,
+        "timestamp": "2026-09-08T51:00:00Z"
+      },
+      {
+        "seq": 52,
+        "latitude": 15.4358,
+        "longitude": 70.1285,
+        "depth": 800.0,
+        "temperature": 4.62,
+        "salinity": 35.6,
+        "chlorophyll": 0.125,
+        "timestamp": "2026-09-08T52:00:00Z"
+      },
+      {
+        "seq": 53,
+        "latitude": 15.4441,
+        "longitude": 70.1117,
+        "depth": 700.0,
+        "temperature": 4.51,
+        "salinity": 35.66,
+        "chlorophyll": 0.102,
+        "timestamp": "2026-09-08T53:00:00Z"
+      },
+      {
+        "seq": 54,
+        "latitude": 15.4525,
+        "longitude": 70.095,
+        "depth": 600.0,
+        "temperature": 7.33,
+        "salinity": 35.44,
+        "chlorophyll": 0.109,
+        "timestamp": "2026-09-08T54:00:00Z"
+      },
+      {
+        "seq": 55,
+        "latitude": 15.4609,
+        "longitude": 70.0782,
+        "depth": 500.0,
+        "temperature": 7.35,
+        "salinity": 35.44,
+        "chlorophyll": 0.124,
+        "timestamp": "2026-09-08T55:00:00Z"
+      },
+      {
+        "seq": 56,
+        "latitude": 15.4693,
+        "longitude": 70.0615,
+        "depth": 400.0,
+        "temperature": 7.34,
+        "salinity": 35.43,
+        "chlorophyll": 0.147,
+        "timestamp": "2026-09-08T56:00:00Z"
+      },
+      {
+        "seq": 57,
+        "latitude": 15.4777,
+        "longitude": 70.0447,
+        "depth": 300.0,
+        "temperature": 12.33,
+        "salinity": 35.44,
+        "chlorophyll": 0.113,
+        "timestamp": "2026-09-08T57:00:00Z"
+      },
+      {
+        "seq": 58,
+        "latitude": 15.486,
+        "longitude": 70.0279,
+        "depth": 200.0,
+        "temperature": 16.27,
+        "salinity": 35.42,
+        "chlorophyll": 0.109,
+        "timestamp": "2026-09-08T58:00:00Z"
+      },
+      {
+        "seq": 59,
+        "latitude": 15.4944,
+        "longitude": 70.0112,
+        "depth": 100.0,
+        "temperature": 22.05,
+        "salinity": 35.45,
+        "chlorophyll": 0.313,
+        "timestamp": "2026-09-08T59:00:00Z"
+      },
+      {
+        "seq": 60,
+        "latitude": 15.5028,
+        "longitude": 69.9944,
+        "depth": 0.0,
+        "temperature": 30.36,
+        "salinity": 35.61,
+        "chlorophyll": 0.192,
+        "timestamp": "2026-09-08T60:00:00Z"
+      },
+      {
+        "seq": 61,
+        "latitude": 15.5112,
+        "longitude": 69.9777,
+        "depth": 100.0,
+        "temperature": 22.12,
+        "salinity": 35.59,
+        "chlorophyll": 0.402,
+        "timestamp": "2026-09-08T61:00:00Z"
+      },
+      {
+        "seq": 62,
+        "latitude": 15.5196,
+        "longitude": 69.9609,
+        "depth": 200.0,
+        "temperature": 16.2,
+        "salinity": 35.45,
+        "chlorophyll": 0.091,
+        "timestamp": "2026-09-08T62:00:00Z"
+      },
+      {
+        "seq": 63,
+        "latitude": 15.5279,
+        "longitude": 69.9441,
+        "depth": 300.0,
+        "temperature": 12.04,
+        "salinity": 35.43,
+        "chlorophyll": 0.138,
+        "timestamp": "2026-09-08T63:00:00Z"
+      },
+      {
+        "seq": 64,
+        "latitude": 15.5363,
+        "longitude": 69.9274,
+        "depth": 400.0,
+        "temperature": 7.45,
+        "salinity": 35.38,
+        "chlorophyll": 0.112,
+        "timestamp": "2026-09-08T64:00:00Z"
+      },
+      {
+        "seq": 65,
+        "latitude": 15.5447,
+        "longitude": 69.9106,
+        "depth": 500.0,
+        "temperature": 7.47,
+        "salinity": 35.38,
+        "chlorophyll": 0.149,
+        "timestamp": "2026-09-08T65:00:00Z"
+      },
+      {
+        "seq": 66,
+        "latitude": 15.5531,
+        "longitude": 69.8939,
+        "depth": 600.0,
+        "temperature": 7.43,
+        "salinity": 35.37,
+        "chlorophyll": 0.163,
+        "timestamp": "2026-09-08T66:00:00Z"
+      },
+      {
+        "seq": 67,
+        "latitude": 15.5615,
+        "longitude": 69.8771,
+        "depth": 700.0,
+        "temperature": 4.63,
+        "salinity": 35.55,
+        "chlorophyll": 0.171,
+        "timestamp": "2026-09-08T67:00:00Z"
+      },
+      {
+        "seq": 68,
+        "latitude": 15.5698,
+        "longitude": 69.8603,
+        "depth": 800.0,
+        "temperature": 4.7,
+        "salinity": 35.59,
+        "chlorophyll": 0.152,
+        "timestamp": "2026-09-08T68:00:00Z"
+      },
+      {
+        "seq": 69,
+        "latitude": 15.5782,
+        "longitude": 69.8436,
+        "depth": 900.0,
+        "temperature": 3.65,
+        "salinity": 35.56,
+        "chlorophyll": 0.101,
+        "timestamp": "2026-09-08T69:00:00Z"
+      },
+      {
+        "seq": 70,
+        "latitude": 15.5866,
+        "longitude": 69.8268,
+        "depth": 1000.0,
+        "temperature": 3.74,
+        "salinity": 35.63,
+        "chlorophyll": 0.098,
+        "timestamp": "2026-09-08T70:00:00Z"
+      },
+      {
+        "seq": 71,
+        "latitude": 15.595,
+        "longitude": 69.8101,
+        "depth": 900.0,
+        "temperature": 3.66,
+        "salinity": 35.58,
+        "chlorophyll": 0.074,
+        "timestamp": "2026-09-08T71:00:00Z"
+      },
+      {
+        "seq": 72,
+        "latitude": 15.6034,
+        "longitude": 69.7933,
+        "depth": 800.0,
+        "temperature": 4.66,
+        "salinity": 35.58,
+        "chlorophyll": 0.159,
+        "timestamp": "2026-09-08T72:00:00Z"
+      },
+      {
+        "seq": 73,
+        "latitude": 15.6117,
+        "longitude": 69.7765,
+        "depth": 700.0,
+        "temperature": 4.6,
+        "salinity": 35.6,
+        "chlorophyll": 0.151,
+        "timestamp": "2026-09-08T73:00:00Z"
+      },
+      {
+        "seq": 74,
+        "latitude": 15.6201,
+        "longitude": 69.7598,
+        "depth": 600.0,
+        "temperature": 7.42,
+        "salinity": 35.35,
+        "chlorophyll": 0.112,
+        "timestamp": "2026-09-08T74:00:00Z"
+      },
+      {
+        "seq": 75,
+        "latitude": 15.6285,
+        "longitude": 69.743,
+        "depth": 500.0,
+        "temperature": 7.55,
+        "salinity": 35.34,
+        "chlorophyll": 0.157,
+        "timestamp": "2026-09-08T75:00:00Z"
+      },
+      {
+        "seq": 76,
+        "latitude": 15.6369,
+        "longitude": 69.7263,
+        "depth": 400.0,
+        "temperature": 7.42,
+        "salinity": 35.39,
+        "chlorophyll": 0.133,
+        "timestamp": "2026-09-08T76:00:00Z"
+      },
+      {
+        "seq": 77,
+        "latitude": 15.6453,
+        "longitude": 69.7095,
+        "depth": 300.0,
+        "temperature": 12.09,
+        "salinity": 35.42,
+        "chlorophyll": 0.126,
+        "timestamp": "2026-09-08T77:00:00Z"
+      },
+      {
+        "seq": 78,
+        "latitude": 15.6536,
+        "longitude": 69.6927,
+        "depth": 200.0,
+        "temperature": 16.32,
+        "salinity": 35.5,
+        "chlorophyll": 0.123,
+        "timestamp": "2026-09-08T78:00:00Z"
+      },
+      {
+        "seq": 79,
+        "latitude": 15.662,
+        "longitude": 69.676,
+        "depth": 100.0,
+        "temperature": 22.17,
+        "salinity": 35.59,
+        "chlorophyll": 0.337,
+        "timestamp": "2026-09-08T79:00:00Z"
+      },
+      {
+        "seq": 80,
+        "latitude": 15.6704,
+        "longitude": 69.6592,
+        "depth": 0.0,
+        "temperature": 30.27,
+        "salinity": 35.64,
+        "chlorophyll": 0.148,
+        "timestamp": "2026-09-08T80:00:00Z"
+      },
+      {
+        "seq": 81,
+        "latitude": 15.6788,
+        "longitude": 69.6425,
+        "depth": 100.0,
+        "temperature": 22.17,
+        "salinity": 35.58,
+        "chlorophyll": 0.372,
+        "timestamp": "2026-09-08T81:00:00Z"
+      },
+      {
+        "seq": 82,
+        "latitude": 15.6872,
+        "longitude": 69.6257,
+        "depth": 200.0,
+        "temperature": 16.19,
+        "salinity": 35.53,
+        "chlorophyll": 0.109,
+        "timestamp": "2026-09-08T82:00:00Z"
+      },
+      {
+        "seq": 83,
+        "latitude": 15.6955,
+        "longitude": 69.6089,
+        "depth": 300.0,
+        "temperature": 12.07,
+        "salinity": 35.43,
+        "chlorophyll": 0.172,
+        "timestamp": "2026-09-08T83:00:00Z"
+      },
+      {
+        "seq": 84,
+        "latitude": 15.7039,
+        "longitude": 69.5922,
+        "depth": 400.0,
+        "temperature": 7.4,
+        "salinity": 35.36,
+        "chlorophyll": 0.152,
+        "timestamp": "2026-09-08T84:00:00Z"
+      },
+      {
+        "seq": 85,
+        "latitude": 15.7123,
+        "longitude": 69.5754,
+        "depth": 500.0,
+        "temperature": 7.55,
+        "salinity": 35.33,
+        "chlorophyll": 0.154,
+        "timestamp": "2026-09-08T85:00:00Z"
+      },
+      {
+        "seq": 86,
+        "latitude": 15.7207,
+        "longitude": 69.5587,
+        "depth": 600.0,
+        "temperature": 7.47,
+        "salinity": 35.36,
+        "chlorophyll": 0.149,
+        "timestamp": "2026-09-08T86:00:00Z"
+      },
+      {
+        "seq": 87,
+        "latitude": 15.7291,
+        "longitude": 69.5419,
+        "depth": 700.0,
+        "temperature": 4.65,
+        "salinity": 35.57,
+        "chlorophyll": 0.115,
+        "timestamp": "2026-09-08T87:00:00Z"
+      },
+      {
+        "seq": 88,
+        "latitude": 15.7374,
+        "longitude": 69.5251,
+        "depth": 800.0,
+        "temperature": 4.65,
+        "salinity": 35.58,
+        "chlorophyll": 0.201,
+        "timestamp": "2026-09-08T88:00:00Z"
+      },
+      {
+        "seq": 89,
+        "latitude": 15.7458,
+        "longitude": 69.5084,
+        "depth": 900.0,
+        "temperature": 3.63,
+        "salinity": 35.58,
+        "chlorophyll": 0.136,
+        "timestamp": "2026-09-08T89:00:00Z"
+      },
+      {
+        "seq": 90,
+        "latitude": 15.7542,
+        "longitude": 69.4916,
+        "depth": 1000.0,
+        "temperature": 3.61,
+        "salinity": 35.58,
+        "chlorophyll": 0.144,
+        "timestamp": "2026-09-08T90:00:00Z"
+      },
+      {
+        "seq": 91,
+        "latitude": 15.7626,
+        "longitude": 69.4749,
+        "depth": 900.0,
+        "temperature": 3.66,
+        "salinity": 35.58,
+        "chlorophyll": 0.126,
+        "timestamp": "2026-09-08T91:00:00Z"
+      },
+      {
+        "seq": 92,
+        "latitude": 15.7709,
+        "longitude": 69.4581,
+        "depth": 800.0,
+        "temperature": 4.72,
+        "salinity": 35.59,
+        "chlorophyll": 0.106,
+        "timestamp": "2026-09-08T92:00:00Z"
+      },
+      {
+        "seq": 93,
+        "latitude": 15.7793,
+        "longitude": 69.4413,
+        "depth": 700.0,
+        "temperature": 4.75,
+        "salinity": 35.59,
+        "chlorophyll": 0.132,
+        "timestamp": "2026-09-08T93:00:00Z"
+      },
+      {
+        "seq": 94,
+        "latitude": 15.7877,
+        "longitude": 69.4246,
+        "depth": 600.0,
+        "temperature": 7.43,
+        "salinity": 35.47,
+        "chlorophyll": 0.146,
+        "timestamp": "2026-09-08T94:00:00Z"
+      },
+      {
+        "seq": 95,
+        "latitude": 15.7961,
+        "longitude": 69.4078,
+        "depth": 500.0,
+        "temperature": 7.51,
+        "salinity": 35.44,
+        "chlorophyll": 0.116,
+        "timestamp": "2026-09-08T95:00:00Z"
+      },
+      {
+        "seq": 96,
+        "latitude": 15.8045,
+        "longitude": 69.3911,
+        "depth": 400.0,
+        "temperature": 7.49,
+        "salinity": 35.45,
+        "chlorophyll": 0.145,
+        "timestamp": "2026-09-08T96:00:00Z"
+      },
+      {
+        "seq": 97,
+        "latitude": 15.8128,
+        "longitude": 69.3743,
+        "depth": 300.0,
+        "temperature": 12.41,
+        "salinity": 35.49,
+        "chlorophyll": 0.189,
+        "timestamp": "2026-09-08T97:00:00Z"
+      },
+      {
+        "seq": 98,
+        "latitude": 15.8212,
+        "longitude": 69.3575,
+        "depth": 200.0,
+        "temperature": 16.22,
+        "salinity": 35.6,
+        "chlorophyll": 0.127,
+        "timestamp": "2026-09-08T98:00:00Z"
+      },
+      {
+        "seq": 99,
+        "latitude": 15.8296,
+        "longitude": 69.3408,
+        "depth": 100.0,
+        "temperature": 22.12,
+        "salinity": 35.62,
+        "chlorophyll": 0.378,
+        "timestamp": "2026-09-08T99:00:00Z"
+      },
+      {
+        "seq": 100,
+        "latitude": 15.838,
+        "longitude": 69.324,
+        "depth": 0.0,
+        "temperature": 30.21,
+        "salinity": 35.86,
+        "chlorophyll": 0.253,
+        "timestamp": "2026-09-08T100:00:00Z"
+      },
+      {
+        "seq": 101,
+        "latitude": 15.8464,
+        "longitude": 69.3073,
+        "depth": 100.0,
+        "temperature": 22.16,
+        "salinity": 35.66,
+        "chlorophyll": 0.385,
+        "timestamp": "2026-09-08T101:00:00Z"
+      },
+      {
+        "seq": 102,
+        "latitude": 15.8547,
+        "longitude": 69.2905,
+        "depth": 200.0,
+        "temperature": 16.31,
+        "salinity": 35.58,
+        "chlorophyll": 0.159,
+        "timestamp": "2026-09-08T102:00:00Z"
+      },
+      {
+        "seq": 103,
+        "latitude": 15.8631,
+        "longitude": 69.2737,
+        "depth": 300.0,
+        "temperature": 12.46,
+        "salinity": 35.52,
+        "chlorophyll": 0.173,
+        "timestamp": "2026-09-08T103:00:00Z"
+      },
+      {
+        "seq": 104,
+        "latitude": 15.8715,
+        "longitude": 69.257,
+        "depth": 400.0,
+        "temperature": 7.43,
+        "salinity": 35.47,
+        "chlorophyll": 0.171,
+        "timestamp": "2026-09-08T104:00:00Z"
+      },
+      {
+        "seq": 105,
+        "latitude": 15.8799,
+        "longitude": 69.2402,
+        "depth": 500.0,
+        "temperature": 7.45,
+        "salinity": 35.47,
+        "chlorophyll": 0.14,
+        "timestamp": "2026-09-08T105:00:00Z"
+      },
+      {
+        "seq": 106,
+        "latitude": 15.8883,
+        "longitude": 69.2235,
+        "depth": 600.0,
+        "temperature": 7.49,
+        "salinity": 35.45,
+        "chlorophyll": 0.128,
+        "timestamp": "2026-09-08T106:00:00Z"
+      },
+      {
+        "seq": 107,
+        "latitude": 15.8966,
+        "longitude": 69.2067,
+        "depth": 700.0,
+        "temperature": 4.68,
+        "salinity": 35.57,
+        "chlorophyll": 0.132,
+        "timestamp": "2026-09-08T107:00:00Z"
+      },
+      {
+        "seq": 108,
+        "latitude": 15.905,
+        "longitude": 69.1899,
+        "depth": 800.0,
+        "temperature": 4.69,
+        "salinity": 35.59,
+        "chlorophyll": 0.092,
+        "timestamp": "2026-09-08T108:00:00Z"
+      },
+      {
+        "seq": 109,
+        "latitude": 15.9134,
+        "longitude": 69.1732,
+        "depth": 900.0,
+        "temperature": 3.64,
+        "salinity": 35.59,
+        "chlorophyll": 0.111,
+        "timestamp": "2026-09-08T109:00:00Z"
+      },
+      {
+        "seq": 110,
+        "latitude": 15.9218,
+        "longitude": 69.1564,
+        "depth": 1000.0,
+        "temperature": 3.46,
+        "salinity": 35.58,
+        "chlorophyll": 0.119,
+        "timestamp": "2026-09-08T110:00:00Z"
+      },
+      {
+        "seq": 111,
+        "latitude": 15.9302,
+        "longitude": 69.1397,
+        "depth": 900.0,
+        "temperature": 3.6,
+        "salinity": 35.55,
+        "chlorophyll": 0.11,
+        "timestamp": "2026-09-08T111:00:00Z"
+      },
+      {
+        "seq": 112,
+        "latitude": 15.9385,
+        "longitude": 69.1229,
+        "depth": 800.0,
+        "temperature": 4.69,
+        "salinity": 35.59,
+        "chlorophyll": 0.11,
+        "timestamp": "2026-09-08T112:00:00Z"
+      },
+      {
+        "seq": 113,
+        "latitude": 15.9469,
+        "longitude": 69.1061,
+        "depth": 700.0,
+        "temperature": 4.79,
+        "salinity": 35.57,
+        "chlorophyll": 0.139,
+        "timestamp": "2026-09-08T113:00:00Z"
+      },
+      {
+        "seq": 114,
+        "latitude": 15.9553,
+        "longitude": 69.0894,
+        "depth": 600.0,
+        "temperature": 7.45,
+        "salinity": 35.47,
+        "chlorophyll": 0.177,
+        "timestamp": "2026-09-08T114:00:00Z"
+      },
+      {
+        "seq": 115,
+        "latitude": 15.9637,
+        "longitude": 69.0726,
+        "depth": 500.0,
+        "temperature": 7.42,
+        "salinity": 35.46,
+        "chlorophyll": 0.145,
+        "timestamp": "2026-09-08T115:00:00Z"
+      },
+      {
+        "seq": 116,
+        "latitude": 15.9721,
+        "longitude": 69.0559,
+        "depth": 400.0,
+        "temperature": 7.51,
+        "salinity": 35.43,
+        "chlorophyll": 0.142,
+        "timestamp": "2026-09-08T116:00:00Z"
+      },
+      {
+        "seq": 117,
+        "latitude": 15.9804,
+        "longitude": 69.0391,
+        "depth": 300.0,
+        "temperature": 12.4,
+        "salinity": 35.5,
+        "chlorophyll": 0.175,
+        "timestamp": "2026-09-08T117:00:00Z"
+      },
+      {
+        "seq": 118,
+        "latitude": 15.9888,
+        "longitude": 69.0223,
+        "depth": 200.0,
+        "temperature": 16.16,
+        "salinity": 35.61,
+        "chlorophyll": 0.18,
+        "timestamp": "2026-09-08T118:00:00Z"
+      },
+      {
+        "seq": 119,
+        "latitude": 15.9972,
+        "longitude": 69.0056,
+        "depth": 100.0,
+        "temperature": 22.17,
+        "salinity": 35.64,
+        "chlorophyll": 0.381,
+        "timestamp": "2026-09-08T119:00:00Z"
+      },
+      {
+        "seq": 120,
+        "latitude": 16.0056,
+        "longitude": 68.9888,
+        "depth": 0.0,
+        "temperature": 30.29,
+        "salinity": 35.84,
+        "chlorophyll": 0.208,
+        "timestamp": "2026-09-08T120:00:00Z"
+      },
+      {
+        "seq": 121,
+        "latitude": 16.014,
+        "longitude": 68.9721,
+        "depth": 100.0,
+        "temperature": 22.18,
+        "salinity": 35.66,
+        "chlorophyll": 0.395,
+        "timestamp": "2026-09-08T121:00:00Z"
+      },
+      {
+        "seq": 122,
+        "latitude": 16.0223,
+        "longitude": 68.9553,
+        "depth": 200.0,
+        "temperature": 16.25,
+        "salinity": 35.61,
+        "chlorophyll": 0.18,
+        "timestamp": "2026-09-08T122:00:00Z"
+      },
+      {
+        "seq": 123,
+        "latitude": 16.0307,
+        "longitude": 68.9385,
+        "depth": 300.0,
+        "temperature": 12.42,
+        "salinity": 35.48,
+        "chlorophyll": 0.194,
+        "timestamp": "2026-09-08T123:00:00Z"
+      },
+      {
+        "seq": 124,
+        "latitude": 16.0391,
+        "longitude": 68.9218,
+        "depth": 400.0,
+        "temperature": 7.5,
+        "salinity": 35.47,
+        "chlorophyll": 0.14,
+        "timestamp": "2026-09-08T124:00:00Z"
+      },
+      {
+        "seq": 125,
+        "latitude": 16.0475,
+        "longitude": 68.905,
+        "depth": 500.0,
+        "temperature": 7.51,
+        "salinity": 35.47,
+        "chlorophyll": 0.152,
+        "timestamp": "2026-09-08T125:00:00Z"
+      },
+      {
+        "seq": 126,
+        "latitude": 16.0559,
+        "longitude": 68.8883,
+        "depth": 600.0,
+        "temperature": 7.46,
+        "salinity": 35.44,
+        "chlorophyll": 0.172,
+        "timestamp": "2026-09-08T126:00:00Z"
+      },
+      {
+        "seq": 127,
+        "latitude": 16.0642,
+        "longitude": 68.8715,
+        "depth": 700.0,
+        "temperature": 4.66,
+        "salinity": 35.57,
+        "chlorophyll": 0.131,
+        "timestamp": "2026-09-08T127:00:00Z"
+      },
+      {
+        "seq": 128,
+        "latitude": 16.0726,
+        "longitude": 68.8547,
+        "depth": 800.0,
+        "temperature": 4.74,
+        "salinity": 35.55,
+        "chlorophyll": 0.127,
+        "timestamp": "2026-09-08T128:00:00Z"
+      },
+      {
+        "seq": 129,
+        "latitude": 16.081,
+        "longitude": 68.838,
+        "depth": 900.0,
+        "temperature": 3.57,
+        "salinity": 35.56,
+        "chlorophyll": 0.118,
+        "timestamp": "2026-09-08T129:00:00Z"
+      },
+      {
+        "seq": 130,
+        "latitude": 16.0894,
+        "longitude": 68.8212,
+        "depth": 1000.0,
+        "temperature": 3.6,
+        "salinity": 35.62,
+        "chlorophyll": 0.141,
+        "timestamp": "2026-09-08T130:00:00Z"
+      },
+      {
+        "seq": 131,
+        "latitude": 16.0978,
+        "longitude": 68.8045,
+        "depth": 900.0,
+        "temperature": 3.65,
+        "salinity": 35.56,
+        "chlorophyll": 0.113,
+        "timestamp": "2026-09-08T131:00:00Z"
+      },
+      {
+        "seq": 132,
+        "latitude": 16.1061,
+        "longitude": 68.7877,
+        "depth": 800.0,
+        "temperature": 4.75,
+        "salinity": 35.59,
+        "chlorophyll": 0.122,
+        "timestamp": "2026-09-08T132:00:00Z"
+      },
+      {
+        "seq": 133,
+        "latitude": 16.1145,
+        "longitude": 68.7709,
+        "depth": 700.0,
+        "temperature": 4.75,
+        "salinity": 35.59,
+        "chlorophyll": 0.121,
+        "timestamp": "2026-09-08T133:00:00Z"
+      },
+      {
+        "seq": 134,
+        "latitude": 16.1229,
+        "longitude": 68.7542,
+        "depth": 600.0,
+        "temperature": 7.47,
+        "salinity": 35.46,
+        "chlorophyll": 0.133,
+        "timestamp": "2026-09-08T134:00:00Z"
+      },
+      {
+        "seq": 135,
+        "latitude": 16.1313,
+        "longitude": 68.7374,
+        "depth": 500.0,
+        "temperature": 7.43,
+        "salinity": 35.44,
+        "chlorophyll": 0.179,
+        "timestamp": "2026-09-08T135:00:00Z"
+      },
+      {
+        "seq": 136,
+        "latitude": 16.1397,
+        "longitude": 68.7207,
+        "depth": 400.0,
+        "temperature": 7.46,
+        "salinity": 35.48,
+        "chlorophyll": 0.147,
+        "timestamp": "2026-09-08T136:00:00Z"
+      },
+      {
+        "seq": 137,
+        "latitude": 16.148,
+        "longitude": 68.7039,
+        "depth": 300.0,
+        "temperature": 12.38,
+        "salinity": 35.5,
+        "chlorophyll": 0.185,
+        "timestamp": "2026-09-08T137:00:00Z"
+      },
+      {
+        "seq": 138,
+        "latitude": 16.1564,
+        "longitude": 68.6872,
+        "depth": 200.0,
+        "temperature": 16.19,
+        "salinity": 35.57,
+        "chlorophyll": 0.198,
+        "timestamp": "2026-09-08T138:00:00Z"
+      },
+      {
+        "seq": 139,
+        "latitude": 16.1648,
+        "longitude": 68.6704,
+        "depth": 100.0,
+        "temperature": 22.16,
+        "salinity": 35.67,
+        "chlorophyll": 0.373,
+        "timestamp": "2026-09-08T139:00:00Z"
+      },
+      {
+        "seq": 140,
+        "latitude": 16.1732,
+        "longitude": 68.6536,
+        "depth": 0.0,
+        "temperature": 30.26,
+        "salinity": 35.89,
+        "chlorophyll": 0.261,
+        "timestamp": "2026-09-08T140:00:00Z"
+      },
+      {
+        "seq": 141,
+        "latitude": 16.1816,
+        "longitude": 68.6369,
+        "depth": 100.0,
+        "temperature": 22.14,
+        "salinity": 35.65,
+        "chlorophyll": 0.362,
+        "timestamp": "2026-09-08T141:00:00Z"
+      },
+      {
+        "seq": 142,
+        "latitude": 16.1899,
+        "longitude": 68.6201,
+        "depth": 200.0,
+        "temperature": 16.22,
+        "salinity": 35.57,
+        "chlorophyll": 0.152,
+        "timestamp": "2026-09-08T142:00:00Z"
+      },
+      {
+        "seq": 143,
+        "latitude": 16.1983,
+        "longitude": 68.6034,
+        "depth": 300.0,
+        "temperature": 12.33,
+        "salinity": 35.49,
+        "chlorophyll": 0.185,
+        "timestamp": "2026-09-08T143:00:00Z"
+      },
+      {
+        "seq": 144,
+        "latitude": 16.2067,
+        "longitude": 68.5866,
+        "depth": 400.0,
+        "temperature": 7.51,
+        "salinity": 35.44,
+        "chlorophyll": 0.179,
+        "timestamp": "2026-09-08T144:00:00Z"
+      },
+      {
+        "seq": 145,
+        "latitude": 16.2151,
+        "longitude": 68.5698,
+        "depth": 500.0,
+        "temperature": 7.5,
+        "salinity": 35.44,
+        "chlorophyll": 0.105,
+        "timestamp": "2026-09-08T145:00:00Z"
+      },
+      {
+        "seq": 146,
+        "latitude": 16.2235,
+        "longitude": 68.5531,
+        "depth": 600.0,
+        "temperature": 7.45,
+        "salinity": 35.44,
+        "chlorophyll": 0.177,
+        "timestamp": "2026-09-08T146:00:00Z"
+      },
+      {
+        "seq": 147,
+        "latitude": 16.2318,
+        "longitude": 68.5363,
+        "depth": 700.0,
+        "temperature": 4.65,
+        "salinity": 35.59,
+        "chlorophyll": 0.151,
+        "timestamp": "2026-09-08T147:00:00Z"
+      },
+      {
+        "seq": 148,
+        "latitude": 16.2402,
+        "longitude": 68.5196,
+        "depth": 800.0,
+        "temperature": 4.71,
+        "salinity": 35.56,
+        "chlorophyll": 0.113,
+        "timestamp": "2026-09-08T148:00:00Z"
+      },
+      {
+        "seq": 149,
+        "latitude": 16.2486,
+        "longitude": 68.5028,
+        "depth": 900.0,
+        "temperature": 3.61,
+        "salinity": 35.62,
+        "chlorophyll": 0.116,
+        "timestamp": "2026-09-08T149:00:00Z"
+      },
+      {
+        "seq": 150,
+        "latitude": 16.257,
+        "longitude": 68.486,
+        "depth": 1000.0,
+        "temperature": 3.59,
+        "salinity": 35.65,
+        "chlorophyll": 0.162,
+        "timestamp": "2026-09-08T150:00:00Z"
+      },
+      {
+        "seq": 151,
+        "latitude": 16.2654,
+        "longitude": 68.4693,
+        "depth": 900.0,
+        "temperature": 3.66,
+        "salinity": 35.67,
+        "chlorophyll": 0.19,
+        "timestamp": "2026-09-08T151:00:00Z"
+      },
+      {
+        "seq": 152,
+        "latitude": 16.2737,
+        "longitude": 68.4525,
+        "depth": 800.0,
+        "temperature": 4.61,
+        "salinity": 35.58,
+        "chlorophyll": 0.159,
+        "timestamp": "2026-09-08T152:00:00Z"
+      },
+      {
+        "seq": 153,
+        "latitude": 16.2821,
+        "longitude": 68.4358,
+        "depth": 700.0,
+        "temperature": 4.69,
+        "salinity": 35.6,
+        "chlorophyll": 0.158,
+        "timestamp": "2026-09-08T153:00:00Z"
+      },
+      {
+        "seq": 154,
+        "latitude": 16.2905,
+        "longitude": 68.419,
+        "depth": 600.0,
+        "temperature": 7.4,
+        "salinity": 35.48,
+        "chlorophyll": 0.161,
+        "timestamp": "2026-09-08T154:00:00Z"
+      },
+      {
+        "seq": 155,
+        "latitude": 16.2989,
+        "longitude": 68.4022,
+        "depth": 500.0,
+        "temperature": 7.36,
+        "salinity": 35.46,
+        "chlorophyll": 0.109,
+        "timestamp": "2026-09-08T155:00:00Z"
+      },
+      {
+        "seq": 156,
+        "latitude": 16.3073,
+        "longitude": 68.3855,
+        "depth": 400.0,
+        "temperature": 7.37,
+        "salinity": 35.45,
+        "chlorophyll": 0.124,
+        "timestamp": "2026-09-08T156:00:00Z"
+      },
+      {
+        "seq": 157,
+        "latitude": 16.3156,
+        "longitude": 68.3687,
+        "depth": 300.0,
+        "temperature": 12.23,
+        "salinity": 35.51,
+        "chlorophyll": 0.121,
+        "timestamp": "2026-09-08T157:00:00Z"
+      },
+      {
+        "seq": 158,
+        "latitude": 16.324,
+        "longitude": 68.352,
+        "depth": 200.0,
+        "temperature": 16.21,
+        "salinity": 35.44,
+        "chlorophyll": 0.104,
+        "timestamp": "2026-09-08T158:00:00Z"
+      },
+      {
+        "seq": 159,
+        "latitude": 16.3324,
+        "longitude": 68.3352,
+        "depth": 100.0,
+        "temperature": 22.16,
+        "salinity": 35.67,
+        "chlorophyll": 0.41,
+        "timestamp": "2026-09-08T159:00:00Z"
+      },
+      {
+        "seq": 160,
+        "latitude": 16.3408,
+        "longitude": 68.3184,
+        "depth": 0.0,
+        "temperature": 30.33,
+        "salinity": 36.04,
+        "chlorophyll": 0.215,
+        "timestamp": "2026-09-08T160:00:00Z"
+      },
+      {
+        "seq": 161,
+        "latitude": 16.3492,
+        "longitude": 68.3017,
+        "depth": 100.0,
+        "temperature": 22.1,
+        "salinity": 35.74,
+        "chlorophyll": 0.385,
+        "timestamp": "2026-09-08T161:00:00Z"
+      },
+      {
+        "seq": 162,
+        "latitude": 16.3575,
+        "longitude": 68.2849,
+        "depth": 200.0,
+        "temperature": 16.23,
+        "salinity": 35.49,
+        "chlorophyll": 0.139,
+        "timestamp": "2026-09-08T162:00:00Z"
+      },
+      {
+        "seq": 163,
+        "latitude": 16.3659,
+        "longitude": 68.2682,
+        "depth": 300.0,
+        "temperature": 12.2,
+        "salinity": 35.49,
+        "chlorophyll": 0.12,
+        "timestamp": "2026-09-08T163:00:00Z"
+      },
+      {
+        "seq": 164,
+        "latitude": 16.3743,
+        "longitude": 68.2514,
+        "depth": 400.0,
+        "temperature": 7.46,
+        "salinity": 35.43,
+        "chlorophyll": 0.122,
+        "timestamp": "2026-09-08T164:00:00Z"
+      },
+      {
+        "seq": 165,
+        "latitude": 16.3827,
+        "longitude": 68.2346,
+        "depth": 500.0,
+        "temperature": 7.36,
+        "salinity": 35.43,
+        "chlorophyll": 0.134,
+        "timestamp": "2026-09-08T165:00:00Z"
+      },
+      {
+        "seq": 166,
+        "latitude": 16.3911,
+        "longitude": 68.2179,
+        "depth": 600.0,
+        "temperature": 7.31,
+        "salinity": 35.45,
+        "chlorophyll": 0.136,
+        "timestamp": "2026-09-08T166:00:00Z"
+      },
+      {
+        "seq": 167,
+        "latitude": 16.3994,
+        "longitude": 68.2011,
+        "depth": 700.0,
+        "temperature": 4.65,
+        "salinity": 35.6,
+        "chlorophyll": 0.155,
+        "timestamp": "2026-09-08T167:00:00Z"
+      },
+      {
+        "seq": 168,
+        "latitude": 16.4078,
+        "longitude": 68.1844,
+        "depth": 800.0,
+        "temperature": 4.6,
+        "salinity": 35.61,
+        "chlorophyll": 0.155,
+        "timestamp": "2026-09-08T168:00:00Z"
+      },
+      {
+        "seq": 169,
+        "latitude": 16.4162,
+        "longitude": 68.1676,
+        "depth": 900.0,
+        "temperature": 3.75,
+        "salinity": 35.63,
+        "chlorophyll": 0.171,
+        "timestamp": "2026-09-08T169:00:00Z"
+      },
+      {
+        "seq": 170,
+        "latitude": 16.4246,
+        "longitude": 68.1508,
+        "depth": 1000.0,
+        "temperature": 3.61,
+        "salinity": 35.61,
+        "chlorophyll": 0.201,
+        "timestamp": "2026-09-08T170:00:00Z"
+      },
+      {
+        "seq": 171,
+        "latitude": 16.433,
+        "longitude": 68.1341,
+        "depth": 900.0,
+        "temperature": 3.62,
+        "salinity": 35.63,
+        "chlorophyll": 0.196,
+        "timestamp": "2026-09-08T171:00:00Z"
+      },
+      {
+        "seq": 172,
+        "latitude": 16.4413,
+        "longitude": 68.1173,
+        "depth": 800.0,
+        "temperature": 4.63,
+        "salinity": 35.6,
+        "chlorophyll": 0.146,
+        "timestamp": "2026-09-08T172:00:00Z"
+      },
+      {
+        "seq": 173,
+        "latitude": 16.4497,
+        "longitude": 68.1006,
+        "depth": 700.0,
+        "temperature": 4.64,
+        "salinity": 35.62,
+        "chlorophyll": 0.191,
+        "timestamp": "2026-09-08T173:00:00Z"
+      },
+      {
+        "seq": 174,
+        "latitude": 16.4581,
+        "longitude": 68.0838,
+        "depth": 600.0,
+        "temperature": 7.34,
+        "salinity": 35.49,
+        "chlorophyll": 0.1,
+        "timestamp": "2026-09-08T174:00:00Z"
+      },
+      {
+        "seq": 175,
+        "latitude": 16.4665,
+        "longitude": 68.067,
+        "depth": 500.0,
+        "temperature": 7.36,
+        "salinity": 35.45,
+        "chlorophyll": 0.087,
+        "timestamp": "2026-09-08T175:00:00Z"
+      },
+      {
+        "seq": 176,
+        "latitude": 16.4749,
+        "longitude": 68.0503,
+        "depth": 400.0,
+        "temperature": 7.41,
+        "salinity": 35.45,
+        "chlorophyll": 0.104,
+        "timestamp": "2026-09-08T176:00:00Z"
+      },
+      {
+        "seq": 177,
+        "latitude": 16.4832,
+        "longitude": 68.0335,
+        "depth": 300.0,
+        "temperature": 12.28,
+        "salinity": 35.5,
+        "chlorophyll": 0.114,
+        "timestamp": "2026-09-08T177:00:00Z"
+      },
+      {
+        "seq": 178,
+        "latitude": 16.4916,
+        "longitude": 68.0168,
+        "depth": 200.0,
+        "temperature": 16.21,
+        "salinity": 35.53,
+        "chlorophyll": 0.12,
+        "timestamp": "2026-09-08T178:00:00Z"
+      },
+      {
+        "seq": 179,
+        "latitude": 16.5,
+        "longitude": 68.0,
+        "depth": 100.0,
+        "temperature": 22.04,
+        "salinity": 35.76,
+        "chlorophyll": 0.422,
+        "timestamp": "2026-09-08T179:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "INCOIS-GLIDER-SEAGLIDER-02",
+    "mission_name": "Bay of Bengal Fresh Plume & Eddy Transect",
+    "platform_type": "Kongsberg Seaglider 1000m",
+    "region": "Northern Bay of Bengal",
+    "start_point": {
+      "latitude": 18.0,
+      "longitude": 87.0
+    },
+    "end_point": {
+      "latitude": 15.5,
+      "longitude": 89.5
+    },
+    "status": "Active Mission",
+    "waypoints": [
+      {
+        "seq": 0,
+        "latitude": 18.0,
+        "longitude": 87.0,
+        "depth": 0.0,
+        "temperature": 30.97,
+        "salinity": 32.48,
+        "chlorophyll": 0.737,
+        "timestamp": "2026-09-08T00:00:00Z"
+      },
+      {
+        "seq": 1,
+        "latitude": 17.986,
+        "longitude": 87.014,
+        "depth": 100.0,
+        "temperature": 22.44,
+        "salinity": 33.27,
+        "chlorophyll": 0.444,
+        "timestamp": "2026-09-08T01:00:00Z"
+      },
+      {
+        "seq": 2,
+        "latitude": 17.9721,
+        "longitude": 87.0279,
+        "depth": 200.0,
+        "temperature": 16.65,
+        "salinity": 33.29,
+        "chlorophyll": 0.15,
+        "timestamp": "2026-09-08T02:00:00Z"
+      },
+      {
+        "seq": 3,
+        "latitude": 17.9581,
+        "longitude": 87.0419,
+        "depth": 300.0,
+        "temperature": 12.54,
+        "salinity": 33.37,
+        "chlorophyll": 0.138,
+        "timestamp": "2026-09-08T03:00:00Z"
+      },
+      {
+        "seq": 4,
+        "latitude": 17.9441,
+        "longitude": 87.0559,
+        "depth": 400.0,
+        "temperature": 7.63,
+        "salinity": 33.38,
+        "chlorophyll": 0.184,
+        "timestamp": "2026-09-08T04:00:00Z"
+      },
+      {
+        "seq": 5,
+        "latitude": 17.9302,
+        "longitude": 87.0698,
+        "depth": 500.0,
+        "temperature": 7.74,
+        "salinity": 33.39,
+        "chlorophyll": 0.158,
+        "timestamp": "2026-09-08T05:00:00Z"
+      },
+      {
+        "seq": 6,
+        "latitude": 17.9162,
+        "longitude": 87.0838,
+        "depth": 600.0,
+        "temperature": 7.64,
+        "salinity": 33.41,
+        "chlorophyll": 0.158,
+        "timestamp": "2026-09-08T06:00:00Z"
+      },
+      {
+        "seq": 7,
+        "latitude": 17.9022,
+        "longitude": 87.0978,
+        "depth": 700.0,
+        "temperature": 4.85,
+        "salinity": 33.57,
+        "chlorophyll": 0.181,
+        "timestamp": "2026-09-08T07:00:00Z"
+      },
+      {
+        "seq": 8,
+        "latitude": 17.8883,
+        "longitude": 87.1117,
+        "depth": 800.0,
+        "temperature": 4.88,
+        "salinity": 33.58,
+        "chlorophyll": 0.162,
+        "timestamp": "2026-09-08T08:00:00Z"
+      },
+      {
+        "seq": 9,
+        "latitude": 17.8743,
+        "longitude": 87.1257,
+        "depth": 900.0,
+        "temperature": 3.89,
+        "salinity": 33.51,
+        "chlorophyll": 0.151,
+        "timestamp": "2026-09-08T09:00:00Z"
+      },
+      {
+        "seq": 10,
+        "latitude": 17.8603,
+        "longitude": 87.1397,
+        "depth": 1000.0,
+        "temperature": 3.91,
+        "salinity": 33.5,
+        "chlorophyll": 0.157,
+        "timestamp": "2026-09-08T10:00:00Z"
+      },
+      {
+        "seq": 11,
+        "latitude": 17.8464,
+        "longitude": 87.1536,
+        "depth": 900.0,
+        "temperature": 3.9,
+        "salinity": 33.51,
+        "chlorophyll": 0.16,
+        "timestamp": "2026-09-08T11:00:00Z"
+      },
+      {
+        "seq": 12,
+        "latitude": 17.8324,
+        "longitude": 87.1676,
+        "depth": 800.0,
+        "temperature": 4.81,
+        "salinity": 33.58,
+        "chlorophyll": 0.192,
+        "timestamp": "2026-09-08T12:00:00Z"
+      },
+      {
+        "seq": 13,
+        "latitude": 17.8184,
+        "longitude": 87.1816,
+        "depth": 700.0,
+        "temperature": 4.83,
+        "salinity": 33.62,
+        "chlorophyll": 0.175,
+        "timestamp": "2026-09-08T13:00:00Z"
+      },
+      {
+        "seq": 14,
+        "latitude": 17.8045,
+        "longitude": 87.1955,
+        "depth": 600.0,
+        "temperature": 7.65,
+        "salinity": 33.36,
+        "chlorophyll": 0.145,
+        "timestamp": "2026-09-08T14:00:00Z"
+      },
+      {
+        "seq": 15,
+        "latitude": 17.7905,
+        "longitude": 87.2095,
+        "depth": 500.0,
+        "temperature": 7.67,
+        "salinity": 33.37,
+        "chlorophyll": 0.187,
+        "timestamp": "2026-09-08T15:00:00Z"
+      },
+      {
+        "seq": 16,
+        "latitude": 17.7765,
+        "longitude": 87.2235,
+        "depth": 400.0,
+        "temperature": 7.67,
+        "salinity": 33.39,
+        "chlorophyll": 0.133,
+        "timestamp": "2026-09-08T16:00:00Z"
+      },
+      {
+        "seq": 17,
+        "latitude": 17.7626,
+        "longitude": 87.2374,
+        "depth": 300.0,
+        "temperature": 12.57,
+        "salinity": 33.39,
+        "chlorophyll": 0.109,
+        "timestamp": "2026-09-08T17:00:00Z"
+      },
+      {
+        "seq": 18,
+        "latitude": 17.7486,
+        "longitude": 87.2514,
+        "depth": 200.0,
+        "temperature": 16.55,
+        "salinity": 33.33,
+        "chlorophyll": 0.198,
+        "timestamp": "2026-09-08T18:00:00Z"
+      },
+      {
+        "seq": 19,
+        "latitude": 17.7346,
+        "longitude": 87.2654,
+        "depth": 100.0,
+        "temperature": 22.48,
+        "salinity": 33.27,
+        "chlorophyll": 0.414,
+        "timestamp": "2026-09-08T19:00:00Z"
+      },
+      {
+        "seq": 20,
+        "latitude": 17.7207,
+        "longitude": 87.2793,
+        "depth": 0.0,
+        "temperature": 30.93,
+        "salinity": 32.52,
+        "chlorophyll": 0.731,
+        "timestamp": "2026-09-08T20:00:00Z"
+      },
+      {
+        "seq": 21,
+        "latitude": 17.7067,
+        "longitude": 87.2933,
+        "depth": 100.0,
+        "temperature": 22.43,
+        "salinity": 33.26,
+        "chlorophyll": 0.46,
+        "timestamp": "2026-09-08T21:00:00Z"
+      },
+      {
+        "seq": 22,
+        "latitude": 17.6927,
+        "longitude": 87.3073,
+        "depth": 200.0,
+        "temperature": 16.6,
+        "salinity": 33.36,
+        "chlorophyll": 0.136,
+        "timestamp": "2026-09-08T22:00:00Z"
+      },
+      {
+        "seq": 23,
+        "latitude": 17.6788,
+        "longitude": 87.3212,
+        "depth": 300.0,
+        "temperature": 12.58,
+        "salinity": 33.39,
+        "chlorophyll": 0.146,
+        "timestamp": "2026-09-08T23:00:00Z"
+      },
+      {
+        "seq": 24,
+        "latitude": 17.6648,
+        "longitude": 87.3352,
+        "depth": 400.0,
+        "temperature": 7.61,
+        "salinity": 33.42,
+        "chlorophyll": 0.133,
+        "timestamp": "2026-09-08T24:00:00Z"
+      },
+      {
+        "seq": 25,
+        "latitude": 17.6508,
+        "longitude": 87.3492,
+        "depth": 500.0,
+        "temperature": 7.73,
+        "salinity": 33.39,
+        "chlorophyll": 0.15,
+        "timestamp": "2026-09-08T25:00:00Z"
+      },
+      {
+        "seq": 26,
+        "latitude": 17.6369,
+        "longitude": 87.3631,
+        "depth": 600.0,
+        "temperature": 7.65,
+        "salinity": 33.41,
+        "chlorophyll": 0.12,
+        "timestamp": "2026-09-08T26:00:00Z"
+      },
+      {
+        "seq": 27,
+        "latitude": 17.6229,
+        "longitude": 87.3771,
+        "depth": 700.0,
+        "temperature": 4.9,
+        "salinity": 33.59,
+        "chlorophyll": 0.178,
+        "timestamp": "2026-09-08T27:00:00Z"
+      },
+      {
+        "seq": 28,
+        "latitude": 17.6089,
+        "longitude": 87.3911,
+        "depth": 800.0,
+        "temperature": 4.9,
+        "salinity": 33.62,
+        "chlorophyll": 0.193,
+        "timestamp": "2026-09-08T28:00:00Z"
+      },
+      {
+        "seq": 29,
+        "latitude": 17.595,
+        "longitude": 87.405,
+        "depth": 900.0,
+        "temperature": 3.9,
+        "salinity": 33.54,
+        "chlorophyll": 0.176,
+        "timestamp": "2026-09-08T29:00:00Z"
+      },
+      {
+        "seq": 30,
+        "latitude": 17.581,
+        "longitude": 87.419,
+        "depth": 1000.0,
+        "temperature": 3.88,
+        "salinity": 33.5,
+        "chlorophyll": 0.14,
+        "timestamp": "2026-09-08T30:00:00Z"
+      },
+      {
+        "seq": 31,
+        "latitude": 17.567,
+        "longitude": 87.433,
+        "depth": 900.0,
+        "temperature": 3.92,
+        "salinity": 33.54,
+        "chlorophyll": 0.146,
+        "timestamp": "2026-09-08T31:00:00Z"
+      },
+      {
+        "seq": 32,
+        "latitude": 17.5531,
+        "longitude": 87.4469,
+        "depth": 800.0,
+        "temperature": 4.91,
+        "salinity": 33.58,
+        "chlorophyll": 0.177,
+        "timestamp": "2026-09-08T32:00:00Z"
+      },
+      {
+        "seq": 33,
+        "latitude": 17.5391,
+        "longitude": 87.4609,
+        "depth": 700.0,
+        "temperature": 4.86,
+        "salinity": 33.61,
+        "chlorophyll": 0.175,
+        "timestamp": "2026-09-08T33:00:00Z"
+      },
+      {
+        "seq": 34,
+        "latitude": 17.5251,
+        "longitude": 87.4749,
+        "depth": 600.0,
+        "temperature": 7.67,
+        "salinity": 33.36,
+        "chlorophyll": 0.151,
+        "timestamp": "2026-09-08T34:00:00Z"
+      },
+      {
+        "seq": 35,
+        "latitude": 17.5112,
+        "longitude": 87.4888,
+        "depth": 500.0,
+        "temperature": 7.73,
+        "salinity": 33.38,
+        "chlorophyll": 0.187,
+        "timestamp": "2026-09-08T35:00:00Z"
+      },
+      {
+        "seq": 36,
+        "latitude": 17.4972,
+        "longitude": 87.5028,
+        "depth": 400.0,
+        "temperature": 7.83,
+        "salinity": 33.41,
+        "chlorophyll": 0.154,
+        "timestamp": "2026-09-08T36:00:00Z"
+      },
+      {
+        "seq": 37,
+        "latitude": 17.4832,
+        "longitude": 87.5168,
+        "depth": 300.0,
+        "temperature": 12.58,
+        "salinity": 33.34,
+        "chlorophyll": 0.177,
+        "timestamp": "2026-09-08T37:00:00Z"
+      },
+      {
+        "seq": 38,
+        "latitude": 17.4693,
+        "longitude": 87.5307,
+        "depth": 200.0,
+        "temperature": 16.66,
+        "salinity": 33.35,
+        "chlorophyll": 0.128,
+        "timestamp": "2026-09-08T38:00:00Z"
+      },
+      {
+        "seq": 39,
+        "latitude": 17.4553,
+        "longitude": 87.5447,
+        "depth": 100.0,
+        "temperature": 22.57,
+        "salinity": 33.26,
+        "chlorophyll": 0.358,
+        "timestamp": "2026-09-08T39:00:00Z"
+      },
+      {
+        "seq": 40,
+        "latitude": 17.4413,
+        "longitude": 87.5587,
+        "depth": 0.0,
+        "temperature": 31.13,
+        "salinity": 32.77,
+        "chlorophyll": 0.592,
+        "timestamp": "2026-09-08T40:00:00Z"
+      },
+      {
+        "seq": 41,
+        "latitude": 17.4274,
+        "longitude": 87.5726,
+        "depth": 100.0,
+        "temperature": 22.67,
+        "salinity": 33.29,
+        "chlorophyll": 0.36,
+        "timestamp": "2026-09-08T41:00:00Z"
+      },
+      {
+        "seq": 42,
+        "latitude": 17.4134,
+        "longitude": 87.5866,
+        "depth": 200.0,
+        "temperature": 16.77,
+        "salinity": 33.35,
+        "chlorophyll": 0.156,
+        "timestamp": "2026-09-08T42:00:00Z"
+      },
+      {
+        "seq": 43,
+        "latitude": 17.3994,
+        "longitude": 87.6006,
+        "depth": 300.0,
+        "temperature": 12.57,
+        "salinity": 33.3,
+        "chlorophyll": 0.185,
+        "timestamp": "2026-09-08T43:00:00Z"
+      },
+      {
+        "seq": 44,
+        "latitude": 17.3855,
+        "longitude": 87.6145,
+        "depth": 400.0,
+        "temperature": 7.75,
+        "salinity": 33.41,
+        "chlorophyll": 0.139,
+        "timestamp": "2026-09-08T44:00:00Z"
+      },
+      {
+        "seq": 45,
+        "latitude": 17.3715,
+        "longitude": 87.6285,
+        "depth": 500.0,
+        "temperature": 7.84,
+        "salinity": 33.46,
+        "chlorophyll": 0.131,
+        "timestamp": "2026-09-08T45:00:00Z"
+      },
+      {
+        "seq": 46,
+        "latitude": 17.3575,
+        "longitude": 87.6425,
+        "depth": 600.0,
+        "temperature": 7.78,
+        "salinity": 33.4,
+        "chlorophyll": 0.113,
+        "timestamp": "2026-09-08T46:00:00Z"
+      },
+      {
+        "seq": 47,
+        "latitude": 17.3436,
+        "longitude": 87.6564,
+        "depth": 700.0,
+        "temperature": 4.85,
+        "salinity": 33.6,
+        "chlorophyll": 0.158,
+        "timestamp": "2026-09-08T47:00:00Z"
+      },
+      {
+        "seq": 48,
+        "latitude": 17.3296,
+        "longitude": 87.6704,
+        "depth": 800.0,
+        "temperature": 4.8,
+        "salinity": 33.58,
+        "chlorophyll": 0.164,
+        "timestamp": "2026-09-08T48:00:00Z"
+      },
+      {
+        "seq": 49,
+        "latitude": 17.3156,
+        "longitude": 87.6844,
+        "depth": 900.0,
+        "temperature": 3.92,
+        "salinity": 33.58,
+        "chlorophyll": 0.102,
+        "timestamp": "2026-09-08T49:00:00Z"
+      },
+      {
+        "seq": 50,
+        "latitude": 17.3017,
+        "longitude": 87.6983,
+        "depth": 1000.0,
+        "temperature": 3.93,
+        "salinity": 33.6,
+        "chlorophyll": 0.134,
+        "timestamp": "2026-09-08T50:00:00Z"
+      },
+      {
+        "seq": 51,
+        "latitude": 17.2877,
+        "longitude": 87.7123,
+        "depth": 900.0,
+        "temperature": 3.92,
+        "salinity": 33.6,
+        "chlorophyll": 0.143,
+        "timestamp": "2026-09-08T51:00:00Z"
+      },
+      {
+        "seq": 52,
+        "latitude": 17.2737,
+        "longitude": 87.7263,
+        "depth": 800.0,
+        "temperature": 4.82,
+        "salinity": 33.61,
+        "chlorophyll": 0.16,
+        "timestamp": "2026-09-08T52:00:00Z"
+      },
+      {
+        "seq": 53,
+        "latitude": 17.2598,
+        "longitude": 87.7402,
+        "depth": 700.0,
+        "temperature": 4.85,
+        "salinity": 33.6,
+        "chlorophyll": 0.178,
+        "timestamp": "2026-09-08T53:00:00Z"
+      },
+      {
+        "seq": 54,
+        "latitude": 17.2458,
+        "longitude": 87.7542,
+        "depth": 600.0,
+        "temperature": 7.71,
+        "salinity": 33.43,
+        "chlorophyll": 0.121,
+        "timestamp": "2026-09-08T54:00:00Z"
+      },
+      {
+        "seq": 55,
+        "latitude": 17.2318,
+        "longitude": 87.7682,
+        "depth": 500.0,
+        "temperature": 7.75,
+        "salinity": 33.44,
+        "chlorophyll": 0.133,
+        "timestamp": "2026-09-08T55:00:00Z"
+      },
+      {
+        "seq": 56,
+        "latitude": 17.2179,
+        "longitude": 87.7821,
+        "depth": 400.0,
+        "temperature": 7.76,
+        "salinity": 33.38,
+        "chlorophyll": 0.175,
+        "timestamp": "2026-09-08T56:00:00Z"
+      },
+      {
+        "seq": 57,
+        "latitude": 17.2039,
+        "longitude": 87.7961,
+        "depth": 300.0,
+        "temperature": 12.59,
+        "salinity": 33.31,
+        "chlorophyll": 0.161,
+        "timestamp": "2026-09-08T57:00:00Z"
+      },
+      {
+        "seq": 58,
+        "latitude": 17.1899,
+        "longitude": 87.8101,
+        "depth": 200.0,
+        "temperature": 16.68,
+        "salinity": 33.38,
+        "chlorophyll": 0.145,
+        "timestamp": "2026-09-08T58:00:00Z"
+      },
+      {
+        "seq": 59,
+        "latitude": 17.176,
+        "longitude": 87.824,
+        "depth": 100.0,
+        "temperature": 22.53,
+        "salinity": 33.27,
+        "chlorophyll": 0.373,
+        "timestamp": "2026-09-08T59:00:00Z"
+      },
+      {
+        "seq": 60,
+        "latitude": 17.162,
+        "longitude": 87.838,
+        "depth": 0.0,
+        "temperature": 31.18,
+        "salinity": 32.76,
+        "chlorophyll": 0.583,
+        "timestamp": "2026-09-08T60:00:00Z"
+      },
+      {
+        "seq": 61,
+        "latitude": 17.148,
+        "longitude": 87.852,
+        "depth": 100.0,
+        "temperature": 22.61,
+        "salinity": 33.3,
+        "chlorophyll": 0.357,
+        "timestamp": "2026-09-08T61:00:00Z"
+      },
+      {
+        "seq": 62,
+        "latitude": 17.1341,
+        "longitude": 87.8659,
+        "depth": 200.0,
+        "temperature": 16.68,
+        "salinity": 33.39,
+        "chlorophyll": 0.145,
+        "timestamp": "2026-09-08T62:00:00Z"
+      },
+      {
+        "seq": 63,
+        "latitude": 17.1201,
+        "longitude": 87.8799,
+        "depth": 300.0,
+        "temperature": 12.51,
+        "salinity": 33.3,
+        "chlorophyll": 0.151,
+        "timestamp": "2026-09-08T63:00:00Z"
+      },
+      {
+        "seq": 64,
+        "latitude": 17.1061,
+        "longitude": 87.8939,
+        "depth": 400.0,
+        "temperature": 7.77,
+        "salinity": 33.41,
+        "chlorophyll": 0.124,
+        "timestamp": "2026-09-08T64:00:00Z"
+      },
+      {
+        "seq": 65,
+        "latitude": 17.0922,
+        "longitude": 87.9078,
+        "depth": 500.0,
+        "temperature": 7.78,
+        "salinity": 33.38,
+        "chlorophyll": 0.108,
+        "timestamp": "2026-09-08T65:00:00Z"
+      },
+      {
+        "seq": 66,
+        "latitude": 17.0782,
+        "longitude": 87.9218,
+        "depth": 600.0,
+        "temperature": 7.83,
+        "salinity": 33.41,
+        "chlorophyll": 0.163,
+        "timestamp": "2026-09-08T66:00:00Z"
+      },
+      {
+        "seq": 67,
+        "latitude": 17.0642,
+        "longitude": 87.9358,
+        "depth": 700.0,
+        "temperature": 4.87,
+        "salinity": 33.6,
+        "chlorophyll": 0.162,
+        "timestamp": "2026-09-08T67:00:00Z"
+      },
+      {
+        "seq": 68,
+        "latitude": 17.0503,
+        "longitude": 87.9497,
+        "depth": 800.0,
+        "temperature": 4.8,
+        "salinity": 33.59,
+        "chlorophyll": 0.208,
+        "timestamp": "2026-09-08T68:00:00Z"
+      },
+      {
+        "seq": 69,
+        "latitude": 17.0363,
+        "longitude": 87.9637,
+        "depth": 900.0,
+        "temperature": 3.92,
+        "salinity": 33.6,
+        "chlorophyll": 0.139,
+        "timestamp": "2026-09-08T69:00:00Z"
+      },
+      {
+        "seq": 70,
+        "latitude": 17.0223,
+        "longitude": 87.9777,
+        "depth": 1000.0,
+        "temperature": 4.0,
+        "salinity": 33.56,
+        "chlorophyll": 0.108,
+        "timestamp": "2026-09-08T70:00:00Z"
+      },
+      {
+        "seq": 71,
+        "latitude": 17.0084,
+        "longitude": 87.9916,
+        "depth": 900.0,
+        "temperature": 3.9,
+        "salinity": 33.57,
+        "chlorophyll": 0.125,
+        "timestamp": "2026-09-08T71:00:00Z"
+      },
+      {
+        "seq": 72,
+        "latitude": 16.9944,
+        "longitude": 88.0056,
+        "depth": 800.0,
+        "temperature": 4.88,
+        "salinity": 33.63,
+        "chlorophyll": 0.141,
+        "timestamp": "2026-09-08T72:00:00Z"
+      },
+      {
+        "seq": 73,
+        "latitude": 16.9804,
+        "longitude": 88.0196,
+        "depth": 700.0,
+        "temperature": 4.9,
+        "salinity": 33.6,
+        "chlorophyll": 0.174,
+        "timestamp": "2026-09-08T73:00:00Z"
+      },
+      {
+        "seq": 74,
+        "latitude": 16.9665,
+        "longitude": 88.0335,
+        "depth": 600.0,
+        "temperature": 7.77,
+        "salinity": 33.4,
+        "chlorophyll": 0.09,
+        "timestamp": "2026-09-08T74:00:00Z"
+      },
+      {
+        "seq": 75,
+        "latitude": 16.9525,
+        "longitude": 88.0475,
+        "depth": 500.0,
+        "temperature": 7.72,
+        "salinity": 33.41,
+        "chlorophyll": 0.141,
+        "timestamp": "2026-09-08T75:00:00Z"
+      },
+      {
+        "seq": 76,
+        "latitude": 16.9385,
+        "longitude": 88.0615,
+        "depth": 400.0,
+        "temperature": 7.77,
+        "salinity": 33.41,
+        "chlorophyll": 0.167,
+        "timestamp": "2026-09-08T76:00:00Z"
+      },
+      {
+        "seq": 77,
+        "latitude": 16.9246,
+        "longitude": 88.0754,
+        "depth": 300.0,
+        "temperature": 12.51,
+        "salinity": 33.31,
+        "chlorophyll": 0.185,
+        "timestamp": "2026-09-08T77:00:00Z"
+      },
+      {
+        "seq": 78,
+        "latitude": 16.9106,
+        "longitude": 88.0894,
+        "depth": 200.0,
+        "temperature": 16.65,
+        "salinity": 33.37,
+        "chlorophyll": 0.146,
+        "timestamp": "2026-09-08T78:00:00Z"
+      },
+      {
+        "seq": 79,
+        "latitude": 16.8966,
+        "longitude": 88.1034,
+        "depth": 100.0,
+        "temperature": 22.56,
+        "salinity": 33.32,
+        "chlorophyll": 0.346,
+        "timestamp": "2026-09-08T79:00:00Z"
+      },
+      {
+        "seq": 80,
+        "latitude": 16.8827,
+        "longitude": 88.1173,
+        "depth": 0.0,
+        "temperature": 31.1,
+        "salinity": 32.74,
+        "chlorophyll": 0.6,
+        "timestamp": "2026-09-08T80:00:00Z"
+      },
+      {
+        "seq": 81,
+        "latitude": 16.8687,
+        "longitude": 88.1313,
+        "depth": 100.0,
+        "temperature": 22.64,
+        "salinity": 33.3,
+        "chlorophyll": 0.376,
+        "timestamp": "2026-09-08T81:00:00Z"
+      },
+      {
+        "seq": 82,
+        "latitude": 16.8547,
+        "longitude": 88.1453,
+        "depth": 200.0,
+        "temperature": 16.73,
+        "salinity": 33.38,
+        "chlorophyll": 0.141,
+        "timestamp": "2026-09-08T82:00:00Z"
+      },
+      {
+        "seq": 83,
+        "latitude": 16.8408,
+        "longitude": 88.1592,
+        "depth": 300.0,
+        "temperature": 12.51,
+        "salinity": 33.31,
+        "chlorophyll": 0.156,
+        "timestamp": "2026-09-08T83:00:00Z"
+      },
+      {
+        "seq": 84,
+        "latitude": 16.8268,
+        "longitude": 88.1732,
+        "depth": 400.0,
+        "temperature": 7.7,
+        "salinity": 33.39,
+        "chlorophyll": 0.126,
+        "timestamp": "2026-09-08T84:00:00Z"
+      },
+      {
+        "seq": 85,
+        "latitude": 16.8128,
+        "longitude": 88.1872,
+        "depth": 500.0,
+        "temperature": 7.77,
+        "salinity": 33.38,
+        "chlorophyll": 0.157,
+        "timestamp": "2026-09-08T85:00:00Z"
+      },
+      {
+        "seq": 86,
+        "latitude": 16.7989,
+        "longitude": 88.2011,
+        "depth": 600.0,
+        "temperature": 7.72,
+        "salinity": 33.45,
+        "chlorophyll": 0.122,
+        "timestamp": "2026-09-08T86:00:00Z"
+      },
+      {
+        "seq": 87,
+        "latitude": 16.7849,
+        "longitude": 88.2151,
+        "depth": 700.0,
+        "temperature": 4.88,
+        "salinity": 33.56,
+        "chlorophyll": 0.157,
+        "timestamp": "2026-09-08T87:00:00Z"
+      },
+      {
+        "seq": 88,
+        "latitude": 16.7709,
+        "longitude": 88.2291,
+        "depth": 800.0,
+        "temperature": 4.85,
+        "salinity": 33.57,
+        "chlorophyll": 0.166,
+        "timestamp": "2026-09-08T88:00:00Z"
+      },
+      {
+        "seq": 89,
+        "latitude": 16.757,
+        "longitude": 88.243,
+        "depth": 900.0,
+        "temperature": 3.88,
+        "salinity": 33.56,
+        "chlorophyll": 0.097,
+        "timestamp": "2026-09-08T89:00:00Z"
+      },
+      {
+        "seq": 90,
+        "latitude": 16.743,
+        "longitude": 88.257,
+        "depth": 1000.0,
+        "temperature": 3.93,
+        "salinity": 33.56,
+        "chlorophyll": 0.134,
+        "timestamp": "2026-09-08T90:00:00Z"
+      },
+      {
+        "seq": 91,
+        "latitude": 16.7291,
+        "longitude": 88.2709,
+        "depth": 900.0,
+        "temperature": 3.94,
+        "salinity": 33.58,
+        "chlorophyll": 0.109,
+        "timestamp": "2026-09-08T91:00:00Z"
+      },
+      {
+        "seq": 92,
+        "latitude": 16.7151,
+        "longitude": 88.2849,
+        "depth": 800.0,
+        "temperature": 4.83,
+        "salinity": 33.58,
+        "chlorophyll": 0.14,
+        "timestamp": "2026-09-08T92:00:00Z"
+      },
+      {
+        "seq": 93,
+        "latitude": 16.7011,
+        "longitude": 88.2989,
+        "depth": 700.0,
+        "temperature": 4.86,
+        "salinity": 33.56,
+        "chlorophyll": 0.15,
+        "timestamp": "2026-09-08T93:00:00Z"
+      },
+      {
+        "seq": 94,
+        "latitude": 16.6872,
+        "longitude": 88.3128,
+        "depth": 600.0,
+        "temperature": 7.73,
+        "salinity": 33.39,
+        "chlorophyll": 0.144,
+        "timestamp": "2026-09-08T94:00:00Z"
+      },
+      {
+        "seq": 95,
+        "latitude": 16.6732,
+        "longitude": 88.3268,
+        "depth": 500.0,
+        "temperature": 7.78,
+        "salinity": 33.4,
+        "chlorophyll": 0.084,
+        "timestamp": "2026-09-08T95:00:00Z"
+      },
+      {
+        "seq": 96,
+        "latitude": 16.6592,
+        "longitude": 88.3408,
+        "depth": 400.0,
+        "temperature": 7.82,
+        "salinity": 33.43,
+        "chlorophyll": 0.156,
+        "timestamp": "2026-09-08T96:00:00Z"
+      },
+      {
+        "seq": 97,
+        "latitude": 16.6453,
+        "longitude": 88.3547,
+        "depth": 300.0,
+        "temperature": 12.5,
+        "salinity": 33.3,
+        "chlorophyll": 0.178,
+        "timestamp": "2026-09-08T97:00:00Z"
+      },
+      {
+        "seq": 98,
+        "latitude": 16.6313,
+        "longitude": 88.3687,
+        "depth": 200.0,
+        "temperature": 16.71,
+        "salinity": 33.36,
+        "chlorophyll": 0.11,
+        "timestamp": "2026-09-08T98:00:00Z"
+      },
+      {
+        "seq": 99,
+        "latitude": 16.6173,
+        "longitude": 88.3827,
+        "depth": 100.0,
+        "temperature": 22.56,
+        "salinity": 33.31,
+        "chlorophyll": 0.352,
+        "timestamp": "2026-09-08T99:00:00Z"
+      },
+      {
+        "seq": 100,
+        "latitude": 16.6034,
+        "longitude": 88.3966,
+        "depth": 0.0,
+        "temperature": 31.21,
+        "salinity": 32.75,
+        "chlorophyll": 0.571,
+        "timestamp": "2026-09-08T100:00:00Z"
+      },
+      {
+        "seq": 101,
+        "latitude": 16.5894,
+        "longitude": 88.4106,
+        "depth": 100.0,
+        "temperature": 22.61,
+        "salinity": 33.3,
+        "chlorophyll": 0.315,
+        "timestamp": "2026-09-08T101:00:00Z"
+      },
+      {
+        "seq": 102,
+        "latitude": 16.5754,
+        "longitude": 88.4246,
+        "depth": 200.0,
+        "temperature": 16.76,
+        "salinity": 33.38,
+        "chlorophyll": 0.101,
+        "timestamp": "2026-09-08T102:00:00Z"
+      },
+      {
+        "seq": 103,
+        "latitude": 16.5615,
+        "longitude": 88.4385,
+        "depth": 300.0,
+        "temperature": 12.57,
+        "salinity": 33.29,
+        "chlorophyll": 0.219,
+        "timestamp": "2026-09-08T103:00:00Z"
+      },
+      {
+        "seq": 104,
+        "latitude": 16.5475,
+        "longitude": 88.4525,
+        "depth": 400.0,
+        "temperature": 7.8,
+        "salinity": 33.38,
+        "chlorophyll": 0.12,
+        "timestamp": "2026-09-08T104:00:00Z"
+      },
+      {
+        "seq": 105,
+        "latitude": 16.5335,
+        "longitude": 88.4665,
+        "depth": 500.0,
+        "temperature": 7.77,
+        "salinity": 33.41,
+        "chlorophyll": 0.153,
+        "timestamp": "2026-09-08T105:00:00Z"
+      },
+      {
+        "seq": 106,
+        "latitude": 16.5196,
+        "longitude": 88.4804,
+        "depth": 600.0,
+        "temperature": 7.8,
+        "salinity": 33.41,
+        "chlorophyll": 0.13,
+        "timestamp": "2026-09-08T106:00:00Z"
+      },
+      {
+        "seq": 107,
+        "latitude": 16.5056,
+        "longitude": 88.4944,
+        "depth": 700.0,
+        "temperature": 4.81,
+        "salinity": 33.59,
+        "chlorophyll": 0.179,
+        "timestamp": "2026-09-08T107:00:00Z"
+      },
+      {
+        "seq": 108,
+        "latitude": 16.4916,
+        "longitude": 88.5084,
+        "depth": 800.0,
+        "temperature": 4.99,
+        "salinity": 33.6,
+        "chlorophyll": 0.177,
+        "timestamp": "2026-09-08T108:00:00Z"
+      },
+      {
+        "seq": 109,
+        "latitude": 16.4777,
+        "longitude": 88.5223,
+        "depth": 900.0,
+        "temperature": 3.7,
+        "salinity": 33.72,
+        "chlorophyll": 0.118,
+        "timestamp": "2026-09-08T109:00:00Z"
+      },
+      {
+        "seq": 110,
+        "latitude": 16.4637,
+        "longitude": 88.5363,
+        "depth": 1000.0,
+        "temperature": 3.7,
+        "salinity": 33.74,
+        "chlorophyll": 0.083,
+        "timestamp": "2026-09-08T110:00:00Z"
+      },
+      {
+        "seq": 111,
+        "latitude": 16.4497,
+        "longitude": 88.5503,
+        "depth": 900.0,
+        "temperature": 3.8,
+        "salinity": 33.71,
+        "chlorophyll": 0.145,
+        "timestamp": "2026-09-08T111:00:00Z"
+      },
+      {
+        "seq": 112,
+        "latitude": 16.4358,
+        "longitude": 88.5642,
+        "depth": 800.0,
+        "temperature": 4.93,
+        "salinity": 33.58,
+        "chlorophyll": 0.169,
+        "timestamp": "2026-09-08T112:00:00Z"
+      },
+      {
+        "seq": 113,
+        "latitude": 16.4218,
+        "longitude": 88.5782,
+        "depth": 700.0,
+        "temperature": 4.9,
+        "salinity": 33.61,
+        "chlorophyll": 0.164,
+        "timestamp": "2026-09-08T113:00:00Z"
+      },
+      {
+        "seq": 114,
+        "latitude": 16.4078,
+        "longitude": 88.5922,
+        "depth": 600.0,
+        "temperature": 7.7,
+        "salinity": 33.41,
+        "chlorophyll": 0.139,
+        "timestamp": "2026-09-08T114:00:00Z"
+      },
+      {
+        "seq": 115,
+        "latitude": 16.3939,
+        "longitude": 88.6061,
+        "depth": 500.0,
+        "temperature": 7.77,
+        "salinity": 33.44,
+        "chlorophyll": 0.142,
+        "timestamp": "2026-09-08T115:00:00Z"
+      },
+      {
+        "seq": 116,
+        "latitude": 16.3799,
+        "longitude": 88.6201,
+        "depth": 400.0,
+        "temperature": 7.68,
+        "salinity": 33.44,
+        "chlorophyll": 0.129,
+        "timestamp": "2026-09-08T116:00:00Z"
+      },
+      {
+        "seq": 117,
+        "latitude": 16.3659,
+        "longitude": 88.6341,
+        "depth": 300.0,
+        "temperature": 12.63,
+        "salinity": 33.43,
+        "chlorophyll": 0.248,
+        "timestamp": "2026-09-08T117:00:00Z"
+      },
+      {
+        "seq": 118,
+        "latitude": 16.352,
+        "longitude": 88.648,
+        "depth": 200.0,
+        "temperature": 16.95,
+        "salinity": 33.36,
+        "chlorophyll": 0.136,
+        "timestamp": "2026-09-08T118:00:00Z"
+      },
+      {
+        "seq": 119,
+        "latitude": 16.338,
+        "longitude": 88.662,
+        "depth": 100.0,
+        "temperature": 22.71,
+        "salinity": 33.31,
+        "chlorophyll": 0.406,
+        "timestamp": "2026-09-08T119:00:00Z"
+      },
+      {
+        "seq": 120,
+        "latitude": 16.324,
+        "longitude": 88.676,
+        "depth": 0.0,
+        "temperature": 31.48,
+        "salinity": 33.08,
+        "chlorophyll": 0.414,
+        "timestamp": "2026-09-08T120:00:00Z"
+      },
+      {
+        "seq": 121,
+        "latitude": 16.3101,
+        "longitude": 88.6899,
+        "depth": 100.0,
+        "temperature": 22.77,
+        "salinity": 33.3,
+        "chlorophyll": 0.383,
+        "timestamp": "2026-09-08T121:00:00Z"
+      },
+      {
+        "seq": 122,
+        "latitude": 16.2961,
+        "longitude": 88.7039,
+        "depth": 200.0,
+        "temperature": 16.85,
+        "salinity": 33.36,
+        "chlorophyll": 0.093,
+        "timestamp": "2026-09-08T122:00:00Z"
+      },
+      {
+        "seq": 123,
+        "latitude": 16.2821,
+        "longitude": 88.7179,
+        "depth": 300.0,
+        "temperature": 12.69,
+        "salinity": 33.41,
+        "chlorophyll": 0.168,
+        "timestamp": "2026-09-08T123:00:00Z"
+      },
+      {
+        "seq": 124,
+        "latitude": 16.2682,
+        "longitude": 88.7318,
+        "depth": 400.0,
+        "temperature": 7.7,
+        "salinity": 33.43,
+        "chlorophyll": 0.142,
+        "timestamp": "2026-09-08T124:00:00Z"
+      },
+      {
+        "seq": 125,
+        "latitude": 16.2542,
+        "longitude": 88.7458,
+        "depth": 500.0,
+        "temperature": 7.76,
+        "salinity": 33.42,
+        "chlorophyll": 0.101,
+        "timestamp": "2026-09-08T125:00:00Z"
+      },
+      {
+        "seq": 126,
+        "latitude": 16.2402,
+        "longitude": 88.7598,
+        "depth": 600.0,
+        "temperature": 7.69,
+        "salinity": 33.41,
+        "chlorophyll": 0.145,
+        "timestamp": "2026-09-08T126:00:00Z"
+      },
+      {
+        "seq": 127,
+        "latitude": 16.2263,
+        "longitude": 88.7737,
+        "depth": 700.0,
+        "temperature": 4.98,
+        "salinity": 33.62,
+        "chlorophyll": 0.168,
+        "timestamp": "2026-09-08T127:00:00Z"
+      },
+      {
+        "seq": 128,
+        "latitude": 16.2123,
+        "longitude": 88.7877,
+        "depth": 800.0,
+        "temperature": 4.86,
+        "salinity": 33.57,
+        "chlorophyll": 0.127,
+        "timestamp": "2026-09-08T128:00:00Z"
+      },
+      {
+        "seq": 129,
+        "latitude": 16.1983,
+        "longitude": 88.8017,
+        "depth": 900.0,
+        "temperature": 3.77,
+        "salinity": 33.72,
+        "chlorophyll": 0.144,
+        "timestamp": "2026-09-08T129:00:00Z"
+      },
+      {
+        "seq": 130,
+        "latitude": 16.1844,
+        "longitude": 88.8156,
+        "depth": 1000.0,
+        "temperature": 3.72,
+        "salinity": 33.73,
+        "chlorophyll": 0.068,
+        "timestamp": "2026-09-08T130:00:00Z"
+      },
+      {
+        "seq": 131,
+        "latitude": 16.1704,
+        "longitude": 88.8296,
+        "depth": 900.0,
+        "temperature": 3.81,
+        "salinity": 33.68,
+        "chlorophyll": 0.124,
+        "timestamp": "2026-09-08T131:00:00Z"
+      },
+      {
+        "seq": 132,
+        "latitude": 16.1564,
+        "longitude": 88.8436,
+        "depth": 800.0,
+        "temperature": 4.89,
+        "salinity": 33.62,
+        "chlorophyll": 0.152,
+        "timestamp": "2026-09-08T132:00:00Z"
+      },
+      {
+        "seq": 133,
+        "latitude": 16.1425,
+        "longitude": 88.8575,
+        "depth": 700.0,
+        "temperature": 5.01,
+        "salinity": 33.59,
+        "chlorophyll": 0.137,
+        "timestamp": "2026-09-08T133:00:00Z"
+      },
+      {
+        "seq": 134,
+        "latitude": 16.1285,
+        "longitude": 88.8715,
+        "depth": 600.0,
+        "temperature": 7.78,
+        "salinity": 33.37,
+        "chlorophyll": 0.126,
+        "timestamp": "2026-09-08T134:00:00Z"
+      },
+      {
+        "seq": 135,
+        "latitude": 16.1145,
+        "longitude": 88.8855,
+        "depth": 500.0,
+        "temperature": 7.71,
+        "salinity": 33.39,
+        "chlorophyll": 0.099,
+        "timestamp": "2026-09-08T135:00:00Z"
+      },
+      {
+        "seq": 136,
+        "latitude": 16.1006,
+        "longitude": 88.8994,
+        "depth": 400.0,
+        "temperature": 7.68,
+        "salinity": 33.42,
+        "chlorophyll": 0.148,
+        "timestamp": "2026-09-08T136:00:00Z"
+      },
+      {
+        "seq": 137,
+        "latitude": 16.0866,
+        "longitude": 88.9134,
+        "depth": 300.0,
+        "temperature": 12.67,
+        "salinity": 33.41,
+        "chlorophyll": 0.228,
+        "timestamp": "2026-09-08T137:00:00Z"
+      },
+      {
+        "seq": 138,
+        "latitude": 16.0726,
+        "longitude": 88.9274,
+        "depth": 200.0,
+        "temperature": 16.89,
+        "salinity": 33.37,
+        "chlorophyll": 0.101,
+        "timestamp": "2026-09-08T138:00:00Z"
+      },
+      {
+        "seq": 139,
+        "latitude": 16.0587,
+        "longitude": 88.9413,
+        "depth": 100.0,
+        "temperature": 22.82,
+        "salinity": 33.31,
+        "chlorophyll": 0.426,
+        "timestamp": "2026-09-08T139:00:00Z"
+      },
+      {
+        "seq": 140,
+        "latitude": 16.0447,
+        "longitude": 88.9553,
+        "depth": 0.0,
+        "temperature": 31.42,
+        "salinity": 33.1,
+        "chlorophyll": 0.383,
+        "timestamp": "2026-09-08T140:00:00Z"
+      },
+      {
+        "seq": 141,
+        "latitude": 16.0307,
+        "longitude": 88.9693,
+        "depth": 100.0,
+        "temperature": 22.81,
+        "salinity": 33.3,
+        "chlorophyll": 0.453,
+        "timestamp": "2026-09-08T141:00:00Z"
+      },
+      {
+        "seq": 142,
+        "latitude": 16.0168,
+        "longitude": 88.9832,
+        "depth": 200.0,
+        "temperature": 16.88,
+        "salinity": 33.34,
+        "chlorophyll": 0.164,
+        "timestamp": "2026-09-08T142:00:00Z"
+      },
+      {
+        "seq": 143,
+        "latitude": 16.0028,
+        "longitude": 88.9972,
+        "depth": 300.0,
+        "temperature": 12.62,
+        "salinity": 33.43,
+        "chlorophyll": 0.21,
+        "timestamp": "2026-09-08T143:00:00Z"
+      },
+      {
+        "seq": 144,
+        "latitude": 15.9888,
+        "longitude": 89.0112,
+        "depth": 400.0,
+        "temperature": 7.63,
+        "salinity": 33.44,
+        "chlorophyll": 0.124,
+        "timestamp": "2026-09-08T144:00:00Z"
+      },
+      {
+        "seq": 145,
+        "latitude": 15.9749,
+        "longitude": 89.0251,
+        "depth": 500.0,
+        "temperature": 7.7,
+        "salinity": 33.42,
+        "chlorophyll": 0.128,
+        "timestamp": "2026-09-08T145:00:00Z"
+      },
+      {
+        "seq": 146,
+        "latitude": 15.9609,
+        "longitude": 89.0391,
+        "depth": 600.0,
+        "temperature": 7.72,
+        "salinity": 33.4,
+        "chlorophyll": 0.103,
+        "timestamp": "2026-09-08T146:00:00Z"
+      },
+      {
+        "seq": 147,
+        "latitude": 15.9469,
+        "longitude": 89.0531,
+        "depth": 700.0,
+        "temperature": 5.0,
+        "salinity": 33.6,
+        "chlorophyll": 0.173,
+        "timestamp": "2026-09-08T147:00:00Z"
+      },
+      {
+        "seq": 148,
+        "latitude": 15.933,
+        "longitude": 89.067,
+        "depth": 800.0,
+        "temperature": 4.94,
+        "salinity": 33.57,
+        "chlorophyll": 0.159,
+        "timestamp": "2026-09-08T148:00:00Z"
+      },
+      {
+        "seq": 149,
+        "latitude": 15.919,
+        "longitude": 89.081,
+        "depth": 900.0,
+        "temperature": 3.72,
+        "salinity": 33.67,
+        "chlorophyll": 0.116,
+        "timestamp": "2026-09-08T149:00:00Z"
+      },
+      {
+        "seq": 150,
+        "latitude": 15.905,
+        "longitude": 89.095,
+        "depth": 1000.0,
+        "temperature": 3.76,
+        "salinity": 33.71,
+        "chlorophyll": 0.094,
+        "timestamp": "2026-09-08T150:00:00Z"
+      },
+      {
+        "seq": 151,
+        "latitude": 15.8911,
+        "longitude": 89.1089,
+        "depth": 900.0,
+        "temperature": 3.66,
+        "salinity": 33.73,
+        "chlorophyll": 0.101,
+        "timestamp": "2026-09-08T151:00:00Z"
+      },
+      {
+        "seq": 152,
+        "latitude": 15.8771,
+        "longitude": 89.1229,
+        "depth": 800.0,
+        "temperature": 4.93,
+        "salinity": 33.58,
+        "chlorophyll": 0.167,
+        "timestamp": "2026-09-08T152:00:00Z"
+      },
+      {
+        "seq": 153,
+        "latitude": 15.8631,
+        "longitude": 89.1369,
+        "depth": 700.0,
+        "temperature": 4.92,
+        "salinity": 33.6,
+        "chlorophyll": 0.168,
+        "timestamp": "2026-09-08T153:00:00Z"
+      },
+      {
+        "seq": 154,
+        "latitude": 15.8492,
+        "longitude": 89.1508,
+        "depth": 600.0,
+        "temperature": 7.75,
+        "salinity": 33.47,
+        "chlorophyll": 0.082,
+        "timestamp": "2026-09-08T154:00:00Z"
+      },
+      {
+        "seq": 155,
+        "latitude": 15.8352,
+        "longitude": 89.1648,
+        "depth": 500.0,
+        "temperature": 7.7,
+        "salinity": 33.43,
+        "chlorophyll": 0.158,
+        "timestamp": "2026-09-08T155:00:00Z"
+      },
+      {
+        "seq": 156,
+        "latitude": 15.8212,
+        "longitude": 89.1788,
+        "depth": 400.0,
+        "temperature": 7.74,
+        "salinity": 33.46,
+        "chlorophyll": 0.125,
+        "timestamp": "2026-09-08T156:00:00Z"
+      },
+      {
+        "seq": 157,
+        "latitude": 15.8073,
+        "longitude": 89.1927,
+        "depth": 300.0,
+        "temperature": 12.62,
+        "salinity": 33.46,
+        "chlorophyll": 0.245,
+        "timestamp": "2026-09-08T157:00:00Z"
+      },
+      {
+        "seq": 158,
+        "latitude": 15.7933,
+        "longitude": 89.2067,
+        "depth": 200.0,
+        "temperature": 16.86,
+        "salinity": 33.39,
+        "chlorophyll": 0.156,
+        "timestamp": "2026-09-08T158:00:00Z"
+      },
+      {
+        "seq": 159,
+        "latitude": 15.7793,
+        "longitude": 89.2207,
+        "depth": 100.0,
+        "temperature": 22.77,
+        "salinity": 33.3,
+        "chlorophyll": 0.446,
+        "timestamp": "2026-09-08T159:00:00Z"
+      },
+      {
+        "seq": 160,
+        "latitude": 15.7654,
+        "longitude": 89.2346,
+        "depth": 0.0,
+        "temperature": 31.44,
+        "salinity": 33.11,
+        "chlorophyll": 0.381,
+        "timestamp": "2026-09-08T160:00:00Z"
+      },
+      {
+        "seq": 161,
+        "latitude": 15.7514,
+        "longitude": 89.2486,
+        "depth": 100.0,
+        "temperature": 22.81,
+        "salinity": 33.33,
+        "chlorophyll": 0.409,
+        "timestamp": "2026-09-08T161:00:00Z"
+      },
+      {
+        "seq": 162,
+        "latitude": 15.7374,
+        "longitude": 89.2626,
+        "depth": 200.0,
+        "temperature": 16.93,
+        "salinity": 33.36,
+        "chlorophyll": 0.122,
+        "timestamp": "2026-09-08T162:00:00Z"
+      },
+      {
+        "seq": 163,
+        "latitude": 15.7235,
+        "longitude": 89.2765,
+        "depth": 300.0,
+        "temperature": 12.7,
+        "salinity": 33.45,
+        "chlorophyll": 0.243,
+        "timestamp": "2026-09-08T163:00:00Z"
+      },
+      {
+        "seq": 164,
+        "latitude": 15.7095,
+        "longitude": 89.2905,
+        "depth": 400.0,
+        "temperature": 7.82,
+        "salinity": 33.43,
+        "chlorophyll": 0.141,
+        "timestamp": "2026-09-08T164:00:00Z"
+      },
+      {
+        "seq": 165,
+        "latitude": 15.6955,
+        "longitude": 89.3045,
+        "depth": 500.0,
+        "temperature": 7.7,
+        "salinity": 33.43,
+        "chlorophyll": 0.144,
+        "timestamp": "2026-09-08T165:00:00Z"
+      },
+      {
+        "seq": 166,
+        "latitude": 15.6816,
+        "longitude": 89.3184,
+        "depth": 600.0,
+        "temperature": 7.7,
+        "salinity": 33.42,
+        "chlorophyll": 0.113,
+        "timestamp": "2026-09-08T166:00:00Z"
+      },
+      {
+        "seq": 167,
+        "latitude": 15.6676,
+        "longitude": 89.3324,
+        "depth": 700.0,
+        "temperature": 4.94,
+        "salinity": 33.6,
+        "chlorophyll": 0.143,
+        "timestamp": "2026-09-08T167:00:00Z"
+      },
+      {
+        "seq": 168,
+        "latitude": 15.6536,
+        "longitude": 89.3464,
+        "depth": 800.0,
+        "temperature": 4.98,
+        "salinity": 33.6,
+        "chlorophyll": 0.147,
+        "timestamp": "2026-09-08T168:00:00Z"
+      },
+      {
+        "seq": 169,
+        "latitude": 15.6397,
+        "longitude": 89.3603,
+        "depth": 900.0,
+        "temperature": 3.72,
+        "salinity": 33.77,
+        "chlorophyll": 0.094,
+        "timestamp": "2026-09-08T169:00:00Z"
+      },
+      {
+        "seq": 170,
+        "latitude": 15.6257,
+        "longitude": 89.3743,
+        "depth": 1000.0,
+        "temperature": 3.68,
+        "salinity": 33.71,
+        "chlorophyll": 0.093,
+        "timestamp": "2026-09-08T170:00:00Z"
+      },
+      {
+        "seq": 171,
+        "latitude": 15.6117,
+        "longitude": 89.3883,
+        "depth": 900.0,
+        "temperature": 3.79,
+        "salinity": 33.72,
+        "chlorophyll": 0.103,
+        "timestamp": "2026-09-08T171:00:00Z"
+      },
+      {
+        "seq": 172,
+        "latitude": 15.5978,
+        "longitude": 89.4022,
+        "depth": 800.0,
+        "temperature": 4.93,
+        "salinity": 33.61,
+        "chlorophyll": 0.152,
+        "timestamp": "2026-09-08T172:00:00Z"
+      },
+      {
+        "seq": 173,
+        "latitude": 15.5838,
+        "longitude": 89.4162,
+        "depth": 700.0,
+        "temperature": 4.94,
+        "salinity": 33.59,
+        "chlorophyll": 0.166,
+        "timestamp": "2026-09-08T173:00:00Z"
+      },
+      {
+        "seq": 174,
+        "latitude": 15.5698,
+        "longitude": 89.4302,
+        "depth": 600.0,
+        "temperature": 7.76,
+        "salinity": 33.44,
+        "chlorophyll": 0.093,
+        "timestamp": "2026-09-08T174:00:00Z"
+      },
+      {
+        "seq": 175,
+        "latitude": 15.5559,
+        "longitude": 89.4441,
+        "depth": 500.0,
+        "temperature": 7.72,
+        "salinity": 33.45,
+        "chlorophyll": 0.127,
+        "timestamp": "2026-09-08T175:00:00Z"
+      },
+      {
+        "seq": 176,
+        "latitude": 15.5419,
+        "longitude": 89.4581,
+        "depth": 400.0,
+        "temperature": 7.71,
+        "salinity": 33.4,
+        "chlorophyll": 0.087,
+        "timestamp": "2026-09-08T176:00:00Z"
+      },
+      {
+        "seq": 177,
+        "latitude": 15.5279,
+        "longitude": 89.4721,
+        "depth": 300.0,
+        "temperature": 12.79,
+        "salinity": 33.4,
+        "chlorophyll": 0.182,
+        "timestamp": "2026-09-08T177:00:00Z"
+      },
+      {
+        "seq": 178,
+        "latitude": 15.514,
+        "longitude": 89.486,
+        "depth": 200.0,
+        "temperature": 16.81,
+        "salinity": 33.38,
+        "chlorophyll": 0.136,
+        "timestamp": "2026-09-08T178:00:00Z"
+      },
+      {
+        "seq": 179,
+        "latitude": 15.5,
+        "longitude": 89.5,
+        "depth": 100.0,
+        "temperature": 22.73,
+        "salinity": 33.39,
+        "chlorophyll": 0.358,
+        "timestamp": "2026-09-08T179:00:00Z"
+      }
+    ]
+  }
+]

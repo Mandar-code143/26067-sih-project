@@ -1,0 +1,1874 @@
+[
+  {
+    "id": "INCOIS-ARGO-2902341",
+    "type": "argo_float",
+    "wmo": "2902341",
+    "sensor": "BGC-Argo (SBE41CP + Aanderaa O2 + EcoFLBB)",
+    "region": "Arabian Sea (Central)",
+    "latitude": 15.476,
+    "longitude": 64.79,
+    "timestamp": "2026-09-08T12:00:00Z",
+    "profiles": [
+      {
+        "depth": 0.0,
+        "temperature": 30.28,
+        "salinity": 36.55,
+        "chlorophyll": 0.321,
+        "dissolved_oxygen": 4.24,
+        "qc_flag": 1
+      },
+      {
+        "depth": 10.0,
+        "temperature": 29.18,
+        "salinity": 36.42,
+        "chlorophyll": 0.404,
+        "dissolved_oxygen": 4.21,
+        "qc_flag": 1
+      },
+      {
+        "depth": 25.0,
+        "temperature": 27.87,
+        "salinity": 36.41,
+        "chlorophyll": 0.755,
+        "dissolved_oxygen": 4.02,
+        "qc_flag": 1
+      },
+      {
+        "depth": 50.0,
+        "temperature": 25.79,
+        "salinity": 36.16,
+        "chlorophyll": 1.32,
+        "dissolved_oxygen": 3.8,
+        "qc_flag": 1
+      },
+      {
+        "depth": 75.0,
+        "temperature": 23.72,
+        "salinity": 36.07,
+        "chlorophyll": 0.977,
+        "dissolved_oxygen": 3.43,
+        "qc_flag": 1
+      },
+      {
+        "depth": 100.0,
+        "temperature": 21.98,
+        "salinity": 35.89,
+        "chlorophyll": 0.347,
+        "dissolved_oxygen": 3.33,
+        "qc_flag": 1
+      },
+      {
+        "depth": 150.0,
+        "temperature": 18.92,
+        "salinity": 35.88,
+        "chlorophyll": 0.195,
+        "dissolved_oxygen": 2.62,
+        "qc_flag": 1
+      },
+      {
+        "depth": 200.0,
+        "temperature": 16.17,
+        "salinity": 35.7,
+        "chlorophyll": 0.103,
+        "dissolved_oxygen": 1.9,
+        "qc_flag": 1
+      },
+      {
+        "depth": 300.0,
+        "temperature": 12.07,
+        "salinity": 35.52,
+        "chlorophyll": 0.14,
+        "dissolved_oxygen": 1.25,
+        "qc_flag": 1
+      },
+      {
+        "depth": 500.0,
+        "temperature": 7.43,
+        "salinity": 35.47,
+        "chlorophyll": 0.19,
+        "dissolved_oxygen": 3.34,
+        "qc_flag": 1
+      },
+      {
+        "depth": 750.0,
+        "temperature": 4.54,
+        "salinity": 35.62,
+        "chlorophyll": 0.213,
+        "dissolved_oxygen": 4.67,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1000.0,
+        "temperature": 3.47,
+        "salinity": 35.58,
+        "chlorophyll": 0.119,
+        "dissolved_oxygen": 4.76,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1500.0,
+        "temperature": 2.84,
+        "salinity": 35.61,
+        "chlorophyll": 0.183,
+        "dissolved_oxygen": 5.38,
+        "qc_flag": 1
+      },
+      {
+        "depth": 2000.0,
+        "temperature": 2.73,
+        "salinity": 35.62,
+        "chlorophyll": 0.207,
+        "dissolved_oxygen": 5.31,
+        "qc_flag": 1
+      }
+    ],
+    "trajectory": [
+      {
+        "latitude": 15.076,
+        "longitude": 64.49,
+        "cycle_number": 115,
+        "timestamp": "2026-09-04T12:00:00Z"
+      },
+      {
+        "latitude": 15.156,
+        "longitude": 64.55,
+        "cycle_number": 116,
+        "timestamp": "2026-09-05T12:00:00Z"
+      },
+      {
+        "latitude": 15.236,
+        "longitude": 64.61,
+        "cycle_number": 117,
+        "timestamp": "2026-09-06T12:00:00Z"
+      },
+      {
+        "latitude": 15.316,
+        "longitude": 64.67,
+        "cycle_number": 118,
+        "timestamp": "2026-09-07T12:00:00Z"
+      },
+      {
+        "latitude": 15.396,
+        "longitude": 64.73,
+        "cycle_number": 119,
+        "timestamp": "2026-09-08T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "INCOIS-ARGO-2902342",
+    "type": "argo_float",
+    "wmo": "2902342",
+    "sensor": "Core-Argo (CTD Profiler)",
+    "region": "Arabian Sea (Upwelling/Malabar)",
+    "latitude": 10.309,
+    "longitude": 72.509,
+    "timestamp": "2026-09-08T12:00:00Z",
+    "profiles": [
+      {
+        "depth": 0.0,
+        "temperature": 27.79,
+        "salinity": 35.4,
+        "chlorophyll": 2.127,
+        "dissolved_oxygen": 4.29,
+        "qc_flag": 1
+      },
+      {
+        "depth": 10.0,
+        "temperature": 27.24,
+        "salinity": 35.41,
+        "chlorophyll": 1.859,
+        "dissolved_oxygen": 4.11,
+        "qc_flag": 1
+      },
+      {
+        "depth": 25.0,
+        "temperature": 26.06,
+        "salinity": 35.35,
+        "chlorophyll": 1.762,
+        "dissolved_oxygen": 3.97,
+        "qc_flag": 1
+      },
+      {
+        "depth": 50.0,
+        "temperature": 24.15,
+        "salinity": 35.36,
+        "chlorophyll": 1.926,
+        "dissolved_oxygen": 3.79,
+        "qc_flag": 1
+      },
+      {
+        "depth": 75.0,
+        "temperature": 22.39,
+        "salinity": 35.33,
+        "chlorophyll": 1.29,
+        "dissolved_oxygen": 3.52,
+        "qc_flag": 1
+      },
+      {
+        "depth": 100.0,
+        "temperature": 21.01,
+        "salinity": 35.33,
+        "chlorophyll": 0.471,
+        "dissolved_oxygen": 3.33,
+        "qc_flag": 1
+      },
+      {
+        "depth": 150.0,
+        "temperature": 18.23,
+        "salinity": 35.41,
+        "chlorophyll": 0.213,
+        "dissolved_oxygen": 2.62,
+        "qc_flag": 1
+      },
+      {
+        "depth": 200.0,
+        "temperature": 15.82,
+        "salinity": 35.43,
+        "chlorophyll": 0.207,
+        "dissolved_oxygen": 2.02,
+        "qc_flag": 1
+      },
+      {
+        "depth": 300.0,
+        "temperature": 11.85,
+        "salinity": 35.33,
+        "chlorophyll": 0.199,
+        "dissolved_oxygen": 1.27,
+        "qc_flag": 1
+      },
+      {
+        "depth": 500.0,
+        "temperature": 7.32,
+        "salinity": 35.44,
+        "chlorophyll": 0.101,
+        "dissolved_oxygen": 3.27,
+        "qc_flag": 1
+      },
+      {
+        "depth": 750.0,
+        "temperature": 4.76,
+        "salinity": 35.66,
+        "chlorophyll": 0.104,
+        "dissolved_oxygen": 4.81,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1000.0,
+        "temperature": 3.55,
+        "salinity": 35.56,
+        "chlorophyll": 0.1,
+        "dissolved_oxygen": 4.74,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1500.0,
+        "temperature": 2.87,
+        "salinity": 35.56,
+        "chlorophyll": 0.197,
+        "dissolved_oxygen": 5.36,
+        "qc_flag": 1
+      },
+      {
+        "depth": 2000.0,
+        "temperature": 2.72,
+        "salinity": 35.53,
+        "chlorophyll": 0.144,
+        "dissolved_oxygen": 5.38,
+        "qc_flag": 1
+      }
+    ],
+    "trajectory": [
+      {
+        "latitude": 9.909,
+        "longitude": 72.209,
+        "cycle_number": 115,
+        "timestamp": "2026-09-04T12:00:00Z"
+      },
+      {
+        "latitude": 9.989,
+        "longitude": 72.269,
+        "cycle_number": 116,
+        "timestamp": "2026-09-05T12:00:00Z"
+      },
+      {
+        "latitude": 10.069,
+        "longitude": 72.329,
+        "cycle_number": 117,
+        "timestamp": "2026-09-06T12:00:00Z"
+      },
+      {
+        "latitude": 10.149,
+        "longitude": 72.389,
+        "cycle_number": 118,
+        "timestamp": "2026-09-07T12:00:00Z"
+      },
+      {
+        "latitude": 10.229,
+        "longitude": 72.449,
+        "cycle_number": 119,
+        "timestamp": "2026-09-08T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "INCOIS-ARGO-2902343",
+    "type": "argo_float",
+    "wmo": "2902343",
+    "sensor": "BGC-Argo (CTD + Chlorophyll)",
+    "region": "Bay of Bengal (Northern Plume)",
+    "latitude": 19.904,
+    "longitude": 88.823,
+    "timestamp": "2026-09-08T12:00:00Z",
+    "profiles": [
+      {
+        "depth": 0.0,
+        "temperature": 30.69,
+        "salinity": 30.21,
+        "chlorophyll": 1.906,
+        "dissolved_oxygen": 4.25,
+        "qc_flag": 1
+      },
+      {
+        "depth": 10.0,
+        "temperature": 29.67,
+        "salinity": 30.79,
+        "chlorophyll": 1.574,
+        "dissolved_oxygen": 4.2,
+        "qc_flag": 1
+      },
+      {
+        "depth": 25.0,
+        "temperature": 28.39,
+        "salinity": 31.33,
+        "chlorophyll": 1.429,
+        "dissolved_oxygen": 4.21,
+        "qc_flag": 1
+      },
+      {
+        "depth": 50.0,
+        "temperature": 26.1,
+        "salinity": 32.12,
+        "chlorophyll": 1.597,
+        "dissolved_oxygen": 3.92,
+        "qc_flag": 1
+      },
+      {
+        "depth": 75.0,
+        "temperature": 24.16,
+        "salinity": 32.47,
+        "chlorophyll": 1.135,
+        "dissolved_oxygen": 3.47,
+        "qc_flag": 1
+      },
+      {
+        "depth": 100.0,
+        "temperature": 22.26,
+        "salinity": 32.82,
+        "chlorophyll": 0.451,
+        "dissolved_oxygen": 3.26,
+        "qc_flag": 1
+      },
+      {
+        "depth": 150.0,
+        "temperature": 19.4,
+        "salinity": 33.09,
+        "chlorophyll": 0.221,
+        "dissolved_oxygen": 2.59,
+        "qc_flag": 1
+      },
+      {
+        "depth": 200.0,
+        "temperature": 16.55,
+        "salinity": 33.26,
+        "chlorophyll": 0.131,
+        "dissolved_oxygen": 1.98,
+        "qc_flag": 1
+      },
+      {
+        "depth": 300.0,
+        "temperature": 12.54,
+        "salinity": 33.43,
+        "chlorophyll": 0.159,
+        "dissolved_oxygen": 1.31,
+        "qc_flag": 1
+      },
+      {
+        "depth": 500.0,
+        "temperature": 7.85,
+        "salinity": 33.43,
+        "chlorophyll": 0.183,
+        "dissolved_oxygen": 3.23,
+        "qc_flag": 1
+      },
+      {
+        "depth": 750.0,
+        "temperature": 5.09,
+        "salinity": 33.61,
+        "chlorophyll": 0.08,
+        "dissolved_oxygen": 4.85,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1000.0,
+        "temperature": 3.87,
+        "salinity": 33.62,
+        "chlorophyll": 0.107,
+        "dissolved_oxygen": 4.69,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1500.0,
+        "temperature": 3.2,
+        "salinity": 33.6,
+        "chlorophyll": 0.166,
+        "dissolved_oxygen": 5.29,
+        "qc_flag": 1
+      },
+      {
+        "depth": 2000.0,
+        "temperature": 3.07,
+        "salinity": 33.56,
+        "chlorophyll": 0.156,
+        "dissolved_oxygen": 5.31,
+        "qc_flag": 1
+      }
+    ],
+    "trajectory": [
+      {
+        "latitude": 19.504,
+        "longitude": 88.523,
+        "cycle_number": 115,
+        "timestamp": "2026-09-04T12:00:00Z"
+      },
+      {
+        "latitude": 19.584,
+        "longitude": 88.583,
+        "cycle_number": 116,
+        "timestamp": "2026-09-05T12:00:00Z"
+      },
+      {
+        "latitude": 19.664,
+        "longitude": 88.643,
+        "cycle_number": 117,
+        "timestamp": "2026-09-06T12:00:00Z"
+      },
+      {
+        "latitude": 19.744,
+        "longitude": 88.703,
+        "cycle_number": 118,
+        "timestamp": "2026-09-07T12:00:00Z"
+      },
+      {
+        "latitude": 19.824,
+        "longitude": 88.763,
+        "cycle_number": 119,
+        "timestamp": "2026-09-08T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "INCOIS-ARGO-2902344",
+    "type": "argo_float",
+    "wmo": "2902344",
+    "sensor": "BGC-Argo",
+    "region": "Bay of Bengal (Central Eddy)",
+    "latitude": 14.409,
+    "longitude": 87.546,
+    "timestamp": "2026-09-08T12:00:00Z",
+    "profiles": [
+      {
+        "depth": 0.0,
+        "temperature": 31.77,
+        "salinity": 33.36,
+        "chlorophyll": 0.196,
+        "dissolved_oxygen": 4.24,
+        "qc_flag": 1
+      },
+      {
+        "depth": 10.0,
+        "temperature": 30.83,
+        "salinity": 33.47,
+        "chlorophyll": 0.372,
+        "dissolved_oxygen": 4.18,
+        "qc_flag": 1
+      },
+      {
+        "depth": 25.0,
+        "temperature": 29.26,
+        "salinity": 33.34,
+        "chlorophyll": 0.752,
+        "dissolved_oxygen": 4.13,
+        "qc_flag": 1
+      },
+      {
+        "depth": 50.0,
+        "temperature": 26.89,
+        "salinity": 33.4,
+        "chlorophyll": 1.251,
+        "dissolved_oxygen": 3.88,
+        "qc_flag": 1
+      },
+      {
+        "depth": 75.0,
+        "temperature": 24.89,
+        "salinity": 33.4,
+        "chlorophyll": 1.005,
+        "dissolved_oxygen": 3.59,
+        "qc_flag": 1
+      },
+      {
+        "depth": 100.0,
+        "temperature": 22.94,
+        "salinity": 33.42,
+        "chlorophyll": 0.441,
+        "dissolved_oxygen": 3.25,
+        "qc_flag": 1
+      },
+      {
+        "depth": 150.0,
+        "temperature": 19.77,
+        "salinity": 33.35,
+        "chlorophyll": 0.084,
+        "dissolved_oxygen": 2.65,
+        "qc_flag": 1
+      },
+      {
+        "depth": 200.0,
+        "temperature": 16.97,
+        "salinity": 33.4,
+        "chlorophyll": 0.139,
+        "dissolved_oxygen": 1.97,
+        "qc_flag": 1
+      },
+      {
+        "depth": 300.0,
+        "temperature": 12.75,
+        "salinity": 33.33,
+        "chlorophyll": 0.086,
+        "dissolved_oxygen": 1.31,
+        "qc_flag": 1
+      },
+      {
+        "depth": 500.0,
+        "temperature": 7.85,
+        "salinity": 33.38,
+        "chlorophyll": 0.161,
+        "dissolved_oxygen": 3.25,
+        "qc_flag": 1
+      },
+      {
+        "depth": 750.0,
+        "temperature": 4.85,
+        "salinity": 33.63,
+        "chlorophyll": 0.146,
+        "dissolved_oxygen": 4.78,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1000.0,
+        "temperature": 3.78,
+        "salinity": 33.68,
+        "chlorophyll": 0.051,
+        "dissolved_oxygen": 4.76,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1500.0,
+        "temperature": 3.28,
+        "salinity": 33.67,
+        "chlorophyll": 0.159,
+        "dissolved_oxygen": 5.27,
+        "qc_flag": 1
+      },
+      {
+        "depth": 2000.0,
+        "temperature": 3.12,
+        "salinity": 33.65,
+        "chlorophyll": 0.138,
+        "dissolved_oxygen": 5.15,
+        "qc_flag": 1
+      }
+    ],
+    "trajectory": [
+      {
+        "latitude": 14.009,
+        "longitude": 87.246,
+        "cycle_number": 115,
+        "timestamp": "2026-09-04T12:00:00Z"
+      },
+      {
+        "latitude": 14.089,
+        "longitude": 87.306,
+        "cycle_number": 116,
+        "timestamp": "2026-09-05T12:00:00Z"
+      },
+      {
+        "latitude": 14.169,
+        "longitude": 87.366,
+        "cycle_number": 117,
+        "timestamp": "2026-09-06T12:00:00Z"
+      },
+      {
+        "latitude": 14.249,
+        "longitude": 87.426,
+        "cycle_number": 118,
+        "timestamp": "2026-09-07T12:00:00Z"
+      },
+      {
+        "latitude": 14.329,
+        "longitude": 87.486,
+        "cycle_number": 119,
+        "timestamp": "2026-09-08T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "INCOIS-ARGO-2902345",
+    "type": "argo_float",
+    "wmo": "2902345",
+    "sensor": "Deep-Argo (4000m CTD)",
+    "region": "Equatorial Indian Ocean",
+    "latitude": 0.637,
+    "longitude": 78.365,
+    "timestamp": "2026-09-08T12:00:00Z",
+    "profiles": [
+      {
+        "depth": 0.0,
+        "temperature": 30.22,
+        "salinity": 33.46,
+        "chlorophyll": 0.231,
+        "dissolved_oxygen": 4.36,
+        "qc_flag": 1
+      },
+      {
+        "depth": 10.0,
+        "temperature": 29.18,
+        "salinity": 33.4,
+        "chlorophyll": 0.442,
+        "dissolved_oxygen": 4.16,
+        "qc_flag": 1
+      },
+      {
+        "depth": 25.0,
+        "temperature": 27.87,
+        "salinity": 33.36,
+        "chlorophyll": 0.786,
+        "dissolved_oxygen": 4.17,
+        "qc_flag": 1
+      },
+      {
+        "depth": 50.0,
+        "temperature": 25.75,
+        "salinity": 33.34,
+        "chlorophyll": 1.352,
+        "dissolved_oxygen": 3.91,
+        "qc_flag": 1
+      },
+      {
+        "depth": 75.0,
+        "temperature": 23.8,
+        "salinity": 33.4,
+        "chlorophyll": 1.021,
+        "dissolved_oxygen": 3.59,
+        "qc_flag": 1
+      },
+      {
+        "depth": 100.0,
+        "temperature": 21.99,
+        "salinity": 33.44,
+        "chlorophyll": 0.395,
+        "dissolved_oxygen": 3.31,
+        "qc_flag": 1
+      },
+      {
+        "depth": 150.0,
+        "temperature": 18.97,
+        "salinity": 33.35,
+        "chlorophyll": 0.245,
+        "dissolved_oxygen": 2.61,
+        "qc_flag": 1
+      },
+      {
+        "depth": 200.0,
+        "temperature": 16.14,
+        "salinity": 33.43,
+        "chlorophyll": 0.165,
+        "dissolved_oxygen": 1.97,
+        "qc_flag": 1
+      },
+      {
+        "depth": 300.0,
+        "temperature": 12.2,
+        "salinity": 33.31,
+        "chlorophyll": 0.166,
+        "dissolved_oxygen": 1.37,
+        "qc_flag": 1
+      },
+      {
+        "depth": 500.0,
+        "temperature": 7.3,
+        "salinity": 33.45,
+        "chlorophyll": 0.141,
+        "dissolved_oxygen": 3.3,
+        "qc_flag": 1
+      },
+      {
+        "depth": 750.0,
+        "temperature": 4.59,
+        "salinity": 33.61,
+        "chlorophyll": 0.093,
+        "dissolved_oxygen": 4.69,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1000.0,
+        "temperature": 3.46,
+        "salinity": 33.64,
+        "chlorophyll": 0.14,
+        "dissolved_oxygen": 4.85,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1500.0,
+        "temperature": 2.85,
+        "salinity": 33.58,
+        "chlorophyll": 0.277,
+        "dissolved_oxygen": 5.28,
+        "qc_flag": 1
+      },
+      {
+        "depth": 2000.0,
+        "temperature": 2.68,
+        "salinity": 33.62,
+        "chlorophyll": 0.141,
+        "dissolved_oxygen": 5.29,
+        "qc_flag": 1
+      }
+    ],
+    "trajectory": [
+      {
+        "latitude": 0.237,
+        "longitude": 78.065,
+        "cycle_number": 115,
+        "timestamp": "2026-09-04T12:00:00Z"
+      },
+      {
+        "latitude": 0.317,
+        "longitude": 78.125,
+        "cycle_number": 116,
+        "timestamp": "2026-09-05T12:00:00Z"
+      },
+      {
+        "latitude": 0.397,
+        "longitude": 78.185,
+        "cycle_number": 117,
+        "timestamp": "2026-09-06T12:00:00Z"
+      },
+      {
+        "latitude": 0.477,
+        "longitude": 78.245,
+        "cycle_number": 118,
+        "timestamp": "2026-09-07T12:00:00Z"
+      },
+      {
+        "latitude": 0.557,
+        "longitude": 78.305,
+        "cycle_number": 119,
+        "timestamp": "2026-09-08T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "INCOIS-ARGO-2902346",
+    "type": "argo_float",
+    "wmo": "2902346",
+    "sensor": "Core-Argo",
+    "region": "Somali Current / Western AS",
+    "latitude": 8.201,
+    "longitude": 53.131,
+    "timestamp": "2026-09-08T12:00:00Z",
+    "profiles": [
+      {
+        "depth": 0.0,
+        "temperature": 28.52,
+        "salinity": 35.04,
+        "chlorophyll": 0.252,
+        "dissolved_oxygen": 4.33,
+        "qc_flag": 1
+      },
+      {
+        "depth": 10.0,
+        "temperature": 27.54,
+        "salinity": 35.09,
+        "chlorophyll": 0.441,
+        "dissolved_oxygen": 4.19,
+        "qc_flag": 1
+      },
+      {
+        "depth": 25.0,
+        "temperature": 26.42,
+        "salinity": 35.13,
+        "chlorophyll": 0.704,
+        "dissolved_oxygen": 4.07,
+        "qc_flag": 1
+      },
+      {
+        "depth": 50.0,
+        "temperature": 24.45,
+        "salinity": 35.19,
+        "chlorophyll": 1.291,
+        "dissolved_oxygen": 4.01,
+        "qc_flag": 1
+      },
+      {
+        "depth": 75.0,
+        "temperature": 22.56,
+        "salinity": 35.16,
+        "chlorophyll": 1.039,
+        "dissolved_oxygen": 3.57,
+        "qc_flag": 1
+      },
+      {
+        "depth": 100.0,
+        "temperature": 20.85,
+        "salinity": 35.22,
+        "chlorophyll": 0.439,
+        "dissolved_oxygen": 3.26,
+        "qc_flag": 1
+      },
+      {
+        "depth": 150.0,
+        "temperature": 18.03,
+        "salinity": 35.22,
+        "chlorophyll": 0.146,
+        "dissolved_oxygen": 2.6,
+        "qc_flag": 1
+      },
+      {
+        "depth": 200.0,
+        "temperature": 15.47,
+        "salinity": 35.26,
+        "chlorophyll": 0.184,
+        "dissolved_oxygen": 2.05,
+        "qc_flag": 1
+      },
+      {
+        "depth": 300.0,
+        "temperature": 11.47,
+        "salinity": 35.35,
+        "chlorophyll": 0.175,
+        "dissolved_oxygen": 1.31,
+        "qc_flag": 1
+      },
+      {
+        "depth": 500.0,
+        "temperature": 6.99,
+        "salinity": 35.38,
+        "chlorophyll": 0.171,
+        "dissolved_oxygen": 3.14,
+        "qc_flag": 1
+      },
+      {
+        "depth": 750.0,
+        "temperature": 4.19,
+        "salinity": 35.68,
+        "chlorophyll": 0.144,
+        "dissolved_oxygen": 4.77,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1000.0,
+        "temperature": 3.15,
+        "salinity": 35.57,
+        "chlorophyll": 0.182,
+        "dissolved_oxygen": 4.9,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1500.0,
+        "temperature": 2.59,
+        "salinity": 35.58,
+        "chlorophyll": 0.155,
+        "dissolved_oxygen": 5.15,
+        "qc_flag": 1
+      },
+      {
+        "depth": 2000.0,
+        "temperature": 2.42,
+        "salinity": 35.59,
+        "chlorophyll": 0.049,
+        "dissolved_oxygen": 5.27,
+        "qc_flag": 1
+      }
+    ],
+    "trajectory": [
+      {
+        "latitude": 7.801,
+        "longitude": 52.831,
+        "cycle_number": 115,
+        "timestamp": "2026-09-04T12:00:00Z"
+      },
+      {
+        "latitude": 7.881,
+        "longitude": 52.891,
+        "cycle_number": 116,
+        "timestamp": "2026-09-05T12:00:00Z"
+      },
+      {
+        "latitude": 7.961,
+        "longitude": 52.951,
+        "cycle_number": 117,
+        "timestamp": "2026-09-06T12:00:00Z"
+      },
+      {
+        "latitude": 8.041,
+        "longitude": 53.011,
+        "cycle_number": 118,
+        "timestamp": "2026-09-07T12:00:00Z"
+      },
+      {
+        "latitude": 8.121,
+        "longitude": 53.071,
+        "cycle_number": 119,
+        "timestamp": "2026-09-08T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "INCOIS-ARGO-2902347",
+    "type": "argo_float",
+    "wmo": "2902347",
+    "sensor": "Core-Argo",
+    "region": "Andaman Sea",
+    "latitude": 11.034,
+    "longitude": 93.521,
+    "timestamp": "2026-09-08T12:00:00Z",
+    "profiles": [
+      {
+        "depth": 0.0,
+        "temperature": 31.67,
+        "salinity": 33.64,
+        "chlorophyll": 0.252,
+        "dissolved_oxygen": 4.34,
+        "qc_flag": 1
+      },
+      {
+        "depth": 10.0,
+        "temperature": 30.68,
+        "salinity": 33.71,
+        "chlorophyll": 0.358,
+        "dissolved_oxygen": 4.23,
+        "qc_flag": 1
+      },
+      {
+        "depth": 25.0,
+        "temperature": 29.32,
+        "salinity": 33.59,
+        "chlorophyll": 0.681,
+        "dissolved_oxygen": 4.09,
+        "qc_flag": 1
+      },
+      {
+        "depth": 50.0,
+        "temperature": 27.11,
+        "salinity": 33.54,
+        "chlorophyll": 1.29,
+        "dissolved_oxygen": 3.8,
+        "qc_flag": 1
+      },
+      {
+        "depth": 75.0,
+        "temperature": 24.82,
+        "salinity": 33.54,
+        "chlorophyll": 0.973,
+        "dissolved_oxygen": 3.56,
+        "qc_flag": 1
+      },
+      {
+        "depth": 100.0,
+        "temperature": 23.0,
+        "salinity": 33.56,
+        "chlorophyll": 0.368,
+        "dissolved_oxygen": 3.26,
+        "qc_flag": 1
+      },
+      {
+        "depth": 150.0,
+        "temperature": 19.67,
+        "salinity": 33.54,
+        "chlorophyll": 0.23,
+        "dissolved_oxygen": 2.57,
+        "qc_flag": 1
+      },
+      {
+        "depth": 200.0,
+        "temperature": 16.93,
+        "salinity": 33.46,
+        "chlorophyll": 0.112,
+        "dissolved_oxygen": 1.93,
+        "qc_flag": 1
+      },
+      {
+        "depth": 300.0,
+        "temperature": 12.73,
+        "salinity": 33.37,
+        "chlorophyll": 0.18,
+        "dissolved_oxygen": 1.21,
+        "qc_flag": 1
+      },
+      {
+        "depth": 500.0,
+        "temperature": 7.9,
+        "salinity": 33.43,
+        "chlorophyll": 0.073,
+        "dissolved_oxygen": 3.24,
+        "qc_flag": 1
+      },
+      {
+        "depth": 750.0,
+        "temperature": 5.11,
+        "salinity": 33.61,
+        "chlorophyll": 0.092,
+        "dissolved_oxygen": 4.78,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1000.0,
+        "temperature": 3.94,
+        "salinity": 33.59,
+        "chlorophyll": 0.09,
+        "dissolved_oxygen": 4.8,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1500.0,
+        "temperature": 3.17,
+        "salinity": 33.58,
+        "chlorophyll": 0.141,
+        "dissolved_oxygen": 5.29,
+        "qc_flag": 1
+      },
+      {
+        "depth": 2000.0,
+        "temperature": 3.12,
+        "salinity": 33.53,
+        "chlorophyll": 0.133,
+        "dissolved_oxygen": 5.22,
+        "qc_flag": 1
+      }
+    ],
+    "trajectory": [
+      {
+        "latitude": 10.634,
+        "longitude": 93.221,
+        "cycle_number": 115,
+        "timestamp": "2026-09-04T12:00:00Z"
+      },
+      {
+        "latitude": 10.714,
+        "longitude": 93.281,
+        "cycle_number": 116,
+        "timestamp": "2026-09-05T12:00:00Z"
+      },
+      {
+        "latitude": 10.794,
+        "longitude": 93.341,
+        "cycle_number": 117,
+        "timestamp": "2026-09-06T12:00:00Z"
+      },
+      {
+        "latitude": 10.874,
+        "longitude": 93.401,
+        "cycle_number": 118,
+        "timestamp": "2026-09-07T12:00:00Z"
+      },
+      {
+        "latitude": 10.954,
+        "longitude": 93.461,
+        "cycle_number": 119,
+        "timestamp": "2026-09-08T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "INCOIS-ARGO-2902348",
+    "type": "argo_float",
+    "wmo": "2902348",
+    "sensor": "Deep-Argo",
+    "region": "South-Central Indian Ocean",
+    "latitude": -8.347,
+    "longitude": 82.396,
+    "timestamp": "2026-09-08T12:00:00Z",
+    "profiles": [
+      {
+        "depth": 0.0,
+        "temperature": 28.61,
+        "salinity": 33.05,
+        "chlorophyll": 0.256,
+        "dissolved_oxygen": 4.24,
+        "qc_flag": 1
+      },
+      {
+        "depth": 10.0,
+        "temperature": 27.51,
+        "salinity": 33.03,
+        "chlorophyll": 0.377,
+        "dissolved_oxygen": 4.26,
+        "qc_flag": 1
+      },
+      {
+        "depth": 25.0,
+        "temperature": 26.35,
+        "salinity": 33.16,
+        "chlorophyll": 0.747,
+        "dissolved_oxygen": 4.04,
+        "qc_flag": 1
+      },
+      {
+        "depth": 50.0,
+        "temperature": 24.21,
+        "salinity": 33.11,
+        "chlorophyll": 1.357,
+        "dissolved_oxygen": 3.75,
+        "qc_flag": 1
+      },
+      {
+        "depth": 75.0,
+        "temperature": 22.41,
+        "salinity": 33.17,
+        "chlorophyll": 0.992,
+        "dissolved_oxygen": 3.68,
+        "qc_flag": 1
+      },
+      {
+        "depth": 100.0,
+        "temperature": 20.85,
+        "salinity": 33.24,
+        "chlorophyll": 0.368,
+        "dissolved_oxygen": 3.26,
+        "qc_flag": 1
+      },
+      {
+        "depth": 150.0,
+        "temperature": 17.92,
+        "salinity": 33.32,
+        "chlorophyll": 0.147,
+        "dissolved_oxygen": 2.69,
+        "qc_flag": 1
+      },
+      {
+        "depth": 200.0,
+        "temperature": 15.53,
+        "salinity": 33.34,
+        "chlorophyll": 0.177,
+        "dissolved_oxygen": 1.98,
+        "qc_flag": 1
+      },
+      {
+        "depth": 300.0,
+        "temperature": 11.55,
+        "salinity": 33.4,
+        "chlorophyll": 0.17,
+        "dissolved_oxygen": 1.46,
+        "qc_flag": 1
+      },
+      {
+        "depth": 500.0,
+        "temperature": 6.93,
+        "salinity": 33.42,
+        "chlorophyll": 0.166,
+        "dissolved_oxygen": 3.33,
+        "qc_flag": 1
+      },
+      {
+        "depth": 750.0,
+        "temperature": 4.27,
+        "salinity": 33.63,
+        "chlorophyll": 0.148,
+        "dissolved_oxygen": 4.71,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1000.0,
+        "temperature": 3.13,
+        "salinity": 33.59,
+        "chlorophyll": 0.128,
+        "dissolved_oxygen": 4.84,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1500.0,
+        "temperature": 2.5,
+        "salinity": 33.67,
+        "chlorophyll": 0.223,
+        "dissolved_oxygen": 5.27,
+        "qc_flag": 1
+      },
+      {
+        "depth": 2000.0,
+        "temperature": 2.54,
+        "salinity": 33.53,
+        "chlorophyll": 0.206,
+        "dissolved_oxygen": 5.28,
+        "qc_flag": 1
+      }
+    ],
+    "trajectory": [
+      {
+        "latitude": -8.747,
+        "longitude": 82.096,
+        "cycle_number": 115,
+        "timestamp": "2026-09-04T12:00:00Z"
+      },
+      {
+        "latitude": -8.667,
+        "longitude": 82.156,
+        "cycle_number": 116,
+        "timestamp": "2026-09-05T12:00:00Z"
+      },
+      {
+        "latitude": -8.587,
+        "longitude": 82.216,
+        "cycle_number": 117,
+        "timestamp": "2026-09-06T12:00:00Z"
+      },
+      {
+        "latitude": -8.507,
+        "longitude": 82.276,
+        "cycle_number": 118,
+        "timestamp": "2026-09-07T12:00:00Z"
+      },
+      {
+        "latitude": -8.427,
+        "longitude": 82.336,
+        "cycle_number": 119,
+        "timestamp": "2026-09-08T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "INCOIS-ARGO-2902349",
+    "type": "argo_float",
+    "wmo": "2902349",
+    "sensor": "Core-Argo",
+    "region": "Lakshadweep Basin",
+    "latitude": 11.403,
+    "longitude": 71.573,
+    "timestamp": "2026-09-08T12:00:00Z",
+    "profiles": [
+      {
+        "depth": 0.0,
+        "temperature": 29.06,
+        "salinity": 35.44,
+        "chlorophyll": 1.229,
+        "dissolved_oxygen": 4.32,
+        "qc_flag": 1
+      },
+      {
+        "depth": 10.0,
+        "temperature": 28.07,
+        "salinity": 35.37,
+        "chlorophyll": 1.092,
+        "dissolved_oxygen": 4.15,
+        "qc_flag": 1
+      },
+      {
+        "depth": 25.0,
+        "temperature": 26.96,
+        "salinity": 35.35,
+        "chlorophyll": 1.244,
+        "dissolved_oxygen": 4.08,
+        "qc_flag": 1
+      },
+      {
+        "depth": 50.0,
+        "temperature": 24.94,
+        "salinity": 35.41,
+        "chlorophyll": 1.641,
+        "dissolved_oxygen": 3.94,
+        "qc_flag": 1
+      },
+      {
+        "depth": 75.0,
+        "temperature": 23.23,
+        "salinity": 35.47,
+        "chlorophyll": 1.152,
+        "dissolved_oxygen": 3.66,
+        "qc_flag": 1
+      },
+      {
+        "depth": 100.0,
+        "temperature": 21.63,
+        "salinity": 35.5,
+        "chlorophyll": 0.407,
+        "dissolved_oxygen": 3.35,
+        "qc_flag": 1
+      },
+      {
+        "depth": 150.0,
+        "temperature": 18.52,
+        "salinity": 35.36,
+        "chlorophyll": 0.26,
+        "dissolved_oxygen": 2.62,
+        "qc_flag": 1
+      },
+      {
+        "depth": 200.0,
+        "temperature": 16.0,
+        "salinity": 35.47,
+        "chlorophyll": 0.178,
+        "dissolved_oxygen": 2.01,
+        "qc_flag": 1
+      },
+      {
+        "depth": 300.0,
+        "temperature": 12.14,
+        "salinity": 35.35,
+        "chlorophyll": 0.164,
+        "dissolved_oxygen": 1.24,
+        "qc_flag": 1
+      },
+      {
+        "depth": 500.0,
+        "temperature": 7.43,
+        "salinity": 35.43,
+        "chlorophyll": 0.097,
+        "dissolved_oxygen": 3.3,
+        "qc_flag": 1
+      },
+      {
+        "depth": 750.0,
+        "temperature": 4.62,
+        "salinity": 35.53,
+        "chlorophyll": 0.186,
+        "dissolved_oxygen": 4.7,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1000.0,
+        "temperature": 3.53,
+        "salinity": 35.61,
+        "chlorophyll": 0.091,
+        "dissolved_oxygen": 4.75,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1500.0,
+        "temperature": 2.85,
+        "salinity": 35.51,
+        "chlorophyll": 0.099,
+        "dissolved_oxygen": 5.13,
+        "qc_flag": 1
+      },
+      {
+        "depth": 2000.0,
+        "temperature": 2.95,
+        "salinity": 35.65,
+        "chlorophyll": 0.094,
+        "dissolved_oxygen": 5.29,
+        "qc_flag": 1
+      }
+    ],
+    "trajectory": [
+      {
+        "latitude": 11.003,
+        "longitude": 71.273,
+        "cycle_number": 115,
+        "timestamp": "2026-09-04T12:00:00Z"
+      },
+      {
+        "latitude": 11.083,
+        "longitude": 71.333,
+        "cycle_number": 116,
+        "timestamp": "2026-09-05T12:00:00Z"
+      },
+      {
+        "latitude": 11.163,
+        "longitude": 71.393,
+        "cycle_number": 117,
+        "timestamp": "2026-09-06T12:00:00Z"
+      },
+      {
+        "latitude": 11.243,
+        "longitude": 71.453,
+        "cycle_number": 118,
+        "timestamp": "2026-09-07T12:00:00Z"
+      },
+      {
+        "latitude": 11.323,
+        "longitude": 71.513,
+        "cycle_number": 119,
+        "timestamp": "2026-09-08T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "INCOIS-ARGO-2902350",
+    "type": "argo_float",
+    "wmo": "2902350",
+    "sensor": "BGC-Argo",
+    "region": "East India Coastal Current (EICC)",
+    "latitude": 16.615,
+    "longitude": 82.866,
+    "timestamp": "2026-09-08T12:00:00Z",
+    "profiles": [
+      {
+        "depth": 0.0,
+        "temperature": 31.66,
+        "salinity": 33.73,
+        "chlorophyll": 0.287,
+        "dissolved_oxygen": 4.29,
+        "qc_flag": 1
+      },
+      {
+        "depth": 10.0,
+        "temperature": 30.34,
+        "salinity": 33.64,
+        "chlorophyll": 0.441,
+        "dissolved_oxygen": 4.15,
+        "qc_flag": 1
+      },
+      {
+        "depth": 25.0,
+        "temperature": 29.33,
+        "salinity": 33.64,
+        "chlorophyll": 0.758,
+        "dissolved_oxygen": 4.13,
+        "qc_flag": 1
+      },
+      {
+        "depth": 50.0,
+        "temperature": 26.96,
+        "salinity": 33.65,
+        "chlorophyll": 1.287,
+        "dissolved_oxygen": 3.84,
+        "qc_flag": 1
+      },
+      {
+        "depth": 75.0,
+        "temperature": 24.86,
+        "salinity": 33.56,
+        "chlorophyll": 1.028,
+        "dissolved_oxygen": 3.54,
+        "qc_flag": 1
+      },
+      {
+        "depth": 100.0,
+        "temperature": 22.75,
+        "salinity": 33.51,
+        "chlorophyll": 0.327,
+        "dissolved_oxygen": 3.3,
+        "qc_flag": 1
+      },
+      {
+        "depth": 150.0,
+        "temperature": 19.58,
+        "salinity": 33.49,
+        "chlorophyll": 0.143,
+        "dissolved_oxygen": 2.52,
+        "qc_flag": 1
+      },
+      {
+        "depth": 200.0,
+        "temperature": 16.93,
+        "salinity": 33.44,
+        "chlorophyll": 0.165,
+        "dissolved_oxygen": 1.89,
+        "qc_flag": 1
+      },
+      {
+        "depth": 300.0,
+        "temperature": 12.68,
+        "salinity": 33.37,
+        "chlorophyll": 0.172,
+        "dissolved_oxygen": 1.35,
+        "qc_flag": 1
+      },
+      {
+        "depth": 500.0,
+        "temperature": 7.68,
+        "salinity": 33.33,
+        "chlorophyll": 0.159,
+        "dissolved_oxygen": 3.31,
+        "qc_flag": 1
+      },
+      {
+        "depth": 750.0,
+        "temperature": 4.74,
+        "salinity": 33.59,
+        "chlorophyll": 0.122,
+        "dissolved_oxygen": 4.73,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1000.0,
+        "temperature": 3.83,
+        "salinity": 33.58,
+        "chlorophyll": 0.186,
+        "dissolved_oxygen": 4.83,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1500.0,
+        "temperature": 3.03,
+        "salinity": 33.59,
+        "chlorophyll": 0.224,
+        "dissolved_oxygen": 5.33,
+        "qc_flag": 1
+      },
+      {
+        "depth": 2000.0,
+        "temperature": 3.0,
+        "salinity": 33.57,
+        "chlorophyll": 0.211,
+        "dissolved_oxygen": 5.17,
+        "qc_flag": 1
+      }
+    ],
+    "trajectory": [
+      {
+        "latitude": 16.215,
+        "longitude": 82.566,
+        "cycle_number": 115,
+        "timestamp": "2026-09-04T12:00:00Z"
+      },
+      {
+        "latitude": 16.295,
+        "longitude": 82.626,
+        "cycle_number": 116,
+        "timestamp": "2026-09-05T12:00:00Z"
+      },
+      {
+        "latitude": 16.375,
+        "longitude": 82.686,
+        "cycle_number": 117,
+        "timestamp": "2026-09-06T12:00:00Z"
+      },
+      {
+        "latitude": 16.455,
+        "longitude": 82.746,
+        "cycle_number": 118,
+        "timestamp": "2026-09-07T12:00:00Z"
+      },
+      {
+        "latitude": 16.535,
+        "longitude": 82.806,
+        "cycle_number": 119,
+        "timestamp": "2026-09-08T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "INCOIS-ARGO-2902351",
+    "type": "argo_float",
+    "wmo": "2902351",
+    "sensor": "Core-Argo",
+    "region": "Sri Lanka Dome",
+    "latitude": 6.824,
+    "longitude": 83.832,
+    "timestamp": "2026-09-08T12:00:00Z",
+    "profiles": [
+      {
+        "depth": 0.0,
+        "temperature": 30.38,
+        "salinity": 33.4,
+        "chlorophyll": 0.182,
+        "dissolved_oxygen": 4.28,
+        "qc_flag": 1
+      },
+      {
+        "depth": 10.0,
+        "temperature": 29.25,
+        "salinity": 33.44,
+        "chlorophyll": 0.406,
+        "dissolved_oxygen": 4.13,
+        "qc_flag": 1
+      },
+      {
+        "depth": 25.0,
+        "temperature": 28.04,
+        "salinity": 33.34,
+        "chlorophyll": 0.759,
+        "dissolved_oxygen": 4.04,
+        "qc_flag": 1
+      },
+      {
+        "depth": 50.0,
+        "temperature": 25.96,
+        "salinity": 33.4,
+        "chlorophyll": 1.281,
+        "dissolved_oxygen": 3.83,
+        "qc_flag": 1
+      },
+      {
+        "depth": 75.0,
+        "temperature": 23.88,
+        "salinity": 33.36,
+        "chlorophyll": 1.059,
+        "dissolved_oxygen": 3.51,
+        "qc_flag": 1
+      },
+      {
+        "depth": 100.0,
+        "temperature": 22.2,
+        "salinity": 33.31,
+        "chlorophyll": 0.341,
+        "dissolved_oxygen": 3.33,
+        "qc_flag": 1
+      },
+      {
+        "depth": 150.0,
+        "temperature": 19.01,
+        "salinity": 33.37,
+        "chlorophyll": 0.19,
+        "dissolved_oxygen": 2.58,
+        "qc_flag": 1
+      },
+      {
+        "depth": 200.0,
+        "temperature": 16.48,
+        "salinity": 33.39,
+        "chlorophyll": 0.108,
+        "dissolved_oxygen": 2.03,
+        "qc_flag": 1
+      },
+      {
+        "depth": 300.0,
+        "temperature": 12.33,
+        "salinity": 33.43,
+        "chlorophyll": 0.131,
+        "dissolved_oxygen": 1.29,
+        "qc_flag": 1
+      },
+      {
+        "depth": 500.0,
+        "temperature": 7.49,
+        "salinity": 33.4,
+        "chlorophyll": 0.065,
+        "dissolved_oxygen": 3.25,
+        "qc_flag": 1
+      },
+      {
+        "depth": 750.0,
+        "temperature": 4.93,
+        "salinity": 33.57,
+        "chlorophyll": 0.122,
+        "dissolved_oxygen": 4.7,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1000.0,
+        "temperature": 3.57,
+        "salinity": 33.56,
+        "chlorophyll": 0.186,
+        "dissolved_oxygen": 4.9,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1500.0,
+        "temperature": 2.98,
+        "salinity": 33.59,
+        "chlorophyll": 0.199,
+        "dissolved_oxygen": 5.36,
+        "qc_flag": 1
+      },
+      {
+        "depth": 2000.0,
+        "temperature": 2.86,
+        "salinity": 33.62,
+        "chlorophyll": 0.124,
+        "dissolved_oxygen": 5.39,
+        "qc_flag": 1
+      }
+    ],
+    "trajectory": [
+      {
+        "latitude": 6.424,
+        "longitude": 83.532,
+        "cycle_number": 115,
+        "timestamp": "2026-09-04T12:00:00Z"
+      },
+      {
+        "latitude": 6.504,
+        "longitude": 83.592,
+        "cycle_number": 116,
+        "timestamp": "2026-09-05T12:00:00Z"
+      },
+      {
+        "latitude": 6.584,
+        "longitude": 83.652,
+        "cycle_number": 117,
+        "timestamp": "2026-09-06T12:00:00Z"
+      },
+      {
+        "latitude": 6.664,
+        "longitude": 83.712,
+        "cycle_number": 118,
+        "timestamp": "2026-09-07T12:00:00Z"
+      },
+      {
+        "latitude": 6.744,
+        "longitude": 83.772,
+        "cycle_number": 119,
+        "timestamp": "2026-09-08T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "INCOIS-ARGO-2902352",
+    "type": "argo_float",
+    "wmo": "2902352",
+    "sensor": "Core-Argo",
+    "region": "Southern Tropical Gyre",
+    "latitude": -11.606,
+    "longitude": 65.297,
+    "timestamp": "2026-09-08T12:00:00Z",
+    "profiles": [
+      {
+        "depth": 0.0,
+        "temperature": 28.77,
+        "salinity": 35.26,
+        "chlorophyll": 0.188,
+        "dissolved_oxygen": 4.22,
+        "qc_flag": 1
+      },
+      {
+        "depth": 10.0,
+        "temperature": 27.44,
+        "salinity": 35.21,
+        "chlorophyll": 0.366,
+        "dissolved_oxygen": 4.28,
+        "qc_flag": 1
+      },
+      {
+        "depth": 25.0,
+        "temperature": 26.36,
+        "salinity": 35.2,
+        "chlorophyll": 0.72,
+        "dissolved_oxygen": 4.02,
+        "qc_flag": 1
+      },
+      {
+        "depth": 50.0,
+        "temperature": 24.38,
+        "salinity": 35.22,
+        "chlorophyll": 1.383,
+        "dissolved_oxygen": 3.87,
+        "qc_flag": 1
+      },
+      {
+        "depth": 75.0,
+        "temperature": 22.39,
+        "salinity": 35.25,
+        "chlorophyll": 1.01,
+        "dissolved_oxygen": 3.56,
+        "qc_flag": 1
+      },
+      {
+        "depth": 100.0,
+        "temperature": 20.55,
+        "salinity": 35.34,
+        "chlorophyll": 0.469,
+        "dissolved_oxygen": 3.23,
+        "qc_flag": 1
+      },
+      {
+        "depth": 150.0,
+        "temperature": 17.71,
+        "salinity": 35.28,
+        "chlorophyll": 0.126,
+        "dissolved_oxygen": 2.73,
+        "qc_flag": 1
+      },
+      {
+        "depth": 200.0,
+        "temperature": 15.21,
+        "salinity": 35.31,
+        "chlorophyll": 0.178,
+        "dissolved_oxygen": 1.83,
+        "qc_flag": 1
+      },
+      {
+        "depth": 300.0,
+        "temperature": 11.17,
+        "salinity": 35.36,
+        "chlorophyll": 0.137,
+        "dissolved_oxygen": 1.33,
+        "qc_flag": 1
+      },
+      {
+        "depth": 500.0,
+        "temperature": 6.57,
+        "salinity": 35.35,
+        "chlorophyll": 0.164,
+        "dissolved_oxygen": 3.35,
+        "qc_flag": 1
+      },
+      {
+        "depth": 750.0,
+        "temperature": 3.74,
+        "salinity": 35.64,
+        "chlorophyll": 0.214,
+        "dissolved_oxygen": 4.78,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1000.0,
+        "temperature": 2.8,
+        "salinity": 35.66,
+        "chlorophyll": 0.14,
+        "dissolved_oxygen": 4.75,
+        "qc_flag": 1
+      },
+      {
+        "depth": 1500.0,
+        "temperature": 2.29,
+        "salinity": 35.59,
+        "chlorophyll": 0.161,
+        "dissolved_oxygen": 5.22,
+        "qc_flag": 1
+      },
+      {
+        "depth": 2000.0,
+        "temperature": 2.06,
+        "salinity": 35.56,
+        "chlorophyll": 0.172,
+        "dissolved_oxygen": 5.34,
+        "qc_flag": 1
+      }
+    ],
+    "trajectory": [
+      {
+        "latitude": -12.006,
+        "longitude": 64.997,
+        "cycle_number": 115,
+        "timestamp": "2026-09-04T12:00:00Z"
+      },
+      {
+        "latitude": -11.926,
+        "longitude": 65.057,
+        "cycle_number": 116,
+        "timestamp": "2026-09-05T12:00:00Z"
+      },
+      {
+        "latitude": -11.846,
+        "longitude": 65.117,
+        "cycle_number": 117,
+        "timestamp": "2026-09-06T12:00:00Z"
+      },
+      {
+        "latitude": -11.766,
+        "longitude": 65.177,
+        "cycle_number": 118,
+        "timestamp": "2026-09-07T12:00:00Z"
+      },
+      {
+        "latitude": -11.686,
+        "longitude": 65.237,
+        "cycle_number": 119,
+        "timestamp": "2026-09-08T12:00:00Z"
+      }
+    ]
+  }
+]

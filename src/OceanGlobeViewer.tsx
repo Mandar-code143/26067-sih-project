@@ -1,97 +1,120 @@
-import { useEffect, useRef, useImperativeHandle, forwardRef, useMemo } from 'react';
+import { useEffect, useRef, useImperativeHandle, forwardRef, useState } from 'react';
 import * as Cesium from 'cesium';
 import 'cesium/Build/Cesium/Widgets/widgets.css';
-import { type ObservationSummary, type DataComparison } from './services/api';
+import { 
+  type ObservationSummary, 
+  type GliderMission,
+  type DataComparison,
+  fetchGridBinary,
+  fetchGliders,
+  fetchGliderMission
+} from './services/api';
+import { createColormapTexture, type ColormapName } from './utils/colormaps';
 
-export type RegionKey = 'INDIAN_OCEAN' | 'ARABIAN_SEA' | 'BAY_OF_BENGAL';
+export type RegionKey = 'INDIAN_OCEAN' | 'ARABIAN_SEA' | 'BAY_OF_BENGAL' | 'EQUATORIAL_IO';
 
 export interface OceanGlobeRef {
   flyToRegion: (regionKey: RegionKey) => void;
-  focusObservation: (lat: number, lon: number) => void;
+  focusObservation: (lat: number, lon: number, depth?: number) => void;
+  focusGlider: (lat: number, lon: number) => void;
 }
 
-const REGIONS: Record<RegionKey, Cesium.Rectangle> = {
-  INDIAN_OCEAN: Cesium.Rectangle.fromDegrees(30.0, -40.0, 120.0, 30.0),
-  ARABIAN_SEA: Cesium.Rectangle.fromDegrees(55.0, 5.0, 77.5, 26.0),
-  BAY_OF_BENGAL: Cesium.Rectangle.fromDegrees(78.0, 4.0, 98.0, 23.0)
+const REGIONS: Record<RegionKey, { rect: Cesium.Rectangle; heading: number; pitch: number; range: number }> = {
+  INDIAN_OCEAN: {
+    rect: Cesium.Rectangle.fromDegrees(45.0, -15.0, 100.0, 28.0),
+    heading: 0,
+    pitch: -55,
+    range: 6500000
+  },
+  ARABIAN_SEA: {
+    rect: Cesium.Rectangle.fromDegrees(52.0, 4.0, 78.0, 26.0),
+    heading: 10,
+    pitch: -45,
+    range: 3200000
+  },
+  BAY_OF_BENGAL: {
+    rect: Cesium.Rectangle.fromDegrees(78.0, 4.0, 98.0, 24.0),
+    heading: -10,
+    pitch: -45,
+    range: 3000000
+  },
+  EQUATORIAL_IO: {
+    rect: Cesium.Rectangle.fromDegrees(60.0, -12.0, 95.0, 8.0),
+    heading: 0,
+    pitch: -40,
+    range: 3800000
+  }
 };
 
 interface OceanGlobeProps {
   observations: ObservationSummary[];
   onObservationSelect: (obs: ObservationSummary) => void;
+  onGliderSelect?: (glider: GliderMission) => void;
   activeObservationId: string | null;
   activeVar: string;
   depth: number;
+  timestamp?: string;
   showModelLayer: boolean;
+  showArgoLayer: boolean;
+  showGlidersLayer: boolean;
+  showCurrentsLayer: boolean;
+  verticalExaggeration?: number; // Scaling factor for depth (e.g., 200x)
   comparison: DataComparison | null;
-}
-
-// Generates a mock heatmap texture for the ocean model
-function generateHeatmapCanvas(variable: string): HTMLCanvasElement {
-  const canvas = document.createElement('canvas');
-  canvas.width = 512;
-  canvas.height = 512;
-  const ctx = canvas.getContext('2d');
-  if (!ctx) return canvas;
-
-  // Draw some procedural looking gradients
-  const gradient = ctx.createLinearGradient(0, 0, 512, 512);
-  if (variable === 'temperature') {
-    gradient.addColorStop(0, 'rgba(0, 50, 150, 0.6)'); // Blue
-    gradient.addColorStop(0.3, 'rgba(0, 200, 255, 0.6)'); // Cyan
-    gradient.addColorStop(0.6, 'rgba(255, 220, 0, 0.6)'); // Yellow
-    gradient.addColorStop(0.8, 'rgba(255, 120, 0, 0.6)'); // Orange
-    gradient.addColorStop(1, 'rgba(200, 0, 0, 0.6)'); // Red
-  } else {
-    gradient.addColorStop(0, 'rgba(10, 30, 80, 0.6)');
-    gradient.addColorStop(0.5, 'rgba(20, 150, 100, 0.6)');
-    gradient.addColorStop(1, 'rgba(150, 220, 50, 0.6)');
-  }
-
-  ctx.fillStyle = gradient;
-  ctx.fillRect(0, 0, 512, 512);
-
-  // Add some "blobs" to make it look like data
-  for (let i = 0; i < 15; i++) {
-    const x = Math.random() * 512;
-    const y = Math.random() * 512;
-    const r = 50 + Math.random() * 150;
-    const g = ctx.createRadialGradient(x, y, 0, x, y, r);
-    if (variable === 'temperature') {
-      g.addColorStop(0, `rgba(${150 + Math.random()*100}, ${Math.random()*100}, 0, 0.4)`);
-      g.addColorStop(1, 'rgba(0,0,0,0)');
-    } else {
-      g.addColorStop(0, `rgba(0, ${150 + Math.random()*100}, ${100 + Math.random()*150}, 0.4)`);
-      g.addColorStop(1, 'rgba(0,0,0,0)');
-    }
-    ctx.fillStyle = g;
-    ctx.beginPath();
-    ctx.arc(x, y, r, 0, Math.PI * 2);
-    ctx.fill();
-  }
-  return canvas;
 }
 
 const OceanGlobeViewer = forwardRef<OceanGlobeRef, OceanGlobeProps>(({ 
   observations, 
   onObservationSelect,
+  onGliderSelect,
   activeObservationId,
   activeVar,
   depth,
+  timestamp = "2026-09-08T12:00:00",
   showModelLayer,
+  showArgoLayer,
+  showGlidersLayer,
+  showCurrentsLayer,
+  verticalExaggeration = 250,
   comparison
 }, ref) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const viewerRef = useRef<Cesium.Viewer | null>(null);
-  const obsRef = useRef(observations);
-  const onSelectRef = useRef(onObservationSelect);
+  const [gliders, setGliders] = useState<GliderMission[]>([]);
+  const [activeGliderId, setActiveGliderId] = useState<string | null>(null);
+  const [isLoadingGrid, setIsLoadingGrid] = useState<boolean>(false);
+  const [dataStats, setDataStats] = useState<{ min: number; max: number; unit: string } | null>(null);
 
-  // Keep refs for event handler closure
+  // Dynamic Refs for event closures
+  const obsRef = useRef(observations);
+  const glidersRef = useRef(gliders);
+  const onObsSelectRef = useRef(onObservationSelect);
+  const onGliderSelectRef = useRef(onGliderSelect);
+
   useEffect(() => {
     obsRef.current = observations;
-    onSelectRef.current = onObservationSelect;
-  }, [observations, onObservationSelect]);
+    glidersRef.current = gliders;
+    onObsSelectRef.current = onObservationSelect;
+    onGliderSelectRef.current = onGliderSelect;
+  }, [observations, gliders, onObservationSelect, onGliderSelect]);
 
+  // Load Glider Missions from API
+  useEffect(() => {
+    async function loadGliders() {
+      try {
+        const summaries = await fetchGliders();
+        const fullMissions = await Promise.all(
+          summaries.map(s => fetchGliderMission(s.id).catch(() => null))
+        );
+        const valid = fullMissions.filter(Boolean) as GliderMission[];
+        setGliders(valid);
+      } catch (err) {
+        console.warn("Could not load gliders:", err);
+      }
+    }
+    loadGliders();
+  }, []);
+
+  // Initialize Cesium 3D Globe with Subsurface Translucency
   useEffect(() => {
     if (!containerRef.current) return;
 
@@ -109,6 +132,7 @@ const OceanGlobeViewer = forwardRef<OceanGlobeRef, OceanGlobeProps>(({
       baseLayer: false
     });
 
+    // Dark Bathymetry & Satellite Basemap
     Cesium.ArcGisMapServerImageryProvider.fromUrl(
       'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer', {
         enablePickFeatures: false
@@ -116,54 +140,68 @@ const OceanGlobeViewer = forwardRef<OceanGlobeRef, OceanGlobeProps>(({
     ).then((provider) => {
       if (viewerRef.current) {
         const layer = viewerRef.current.imageryLayers.addImageryProvider(provider);
-        // Slightly subdue to not overpower model, but keep it realistic
-        layer.brightness = 0.8;
-        layer.contrast = 1.2;
-        layer.saturation = 0.8;
+        layer.brightness = 0.75;
+        layer.contrast = 1.3;
+        layer.saturation = 0.7;
       }
-    });
+    }).catch(console.error);
 
-    // Add labels and boundaries
+    // Geographic Coastlines & Boundary Reference Layer
     Cesium.ArcGisMapServerImageryProvider.fromUrl(
       'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer', {
         enablePickFeatures: false
       }
     ).then((provider) => {
       if (viewerRef.current) {
-        viewerRef.current.imageryLayers.addImageryProvider(provider);
+        const layer = viewerRef.current.imageryLayers.addImageryProvider(provider);
+        layer.alpha = 0.65;
       }
-    });
+    }).catch(console.error);
     
-    // Hide default Cesium logo
+    // UI Cleanup
     const creditContainer = viewer.bottomContainer;
-if (creditContainer instanceof HTMLElement) {
-  creditContainer.style.display = 'none';
-}
+    if (creditContainer instanceof HTMLElement) {
+      creditContainer.style.display = 'none';
+    }
 
+    // Atmosphere & Sub-Surface Ocean Rendering
     viewer.scene.globe.enableLighting = true;
-    // Darken globe base color
-    viewer.scene.globe.baseColor = Cesium.Color.fromCssColorString('#020813');
+    viewer.scene.globe.baseColor = Cesium.Color.fromCssColorString('#030b18');
+    viewer.scene.backgroundColor = Cesium.Color.fromCssColorString('#020610');
     
-    // Enable translucency so layers beneath the surface are visible
+    // Enable underground translucency for 3D sub-surface water column inspection
     viewer.scene.globe.translucency.enabled = true;
-    viewer.scene.globe.translucency.frontFaceAlphaByDistance = new Cesium.NearFarScalar(400.0, 0.9, 8000.0, 0.9);
-    
+    viewer.scene.globe.translucency.frontFaceAlphaByDistance = new Cesium.NearFarScalar(1000.0, 0.85, 10000000.0, 0.95);
+    viewer.scene.globe.depthTestAgainstTerrain = false;
+
     viewerRef.current = viewer;
 
-    // Default overview
+    // Default Overview Camera
     viewer.camera.setView({
-      destination: REGIONS.INDIAN_OCEAN
+      destination: REGIONS.INDIAN_OCEAN.rect
     });
 
-    // Handle clicks
+    // Handle 3D Raycast Object Picking
     const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
     handler.setInputAction((click: any) => {
       const pickedObject = viewer.scene.pick(click.position);
-      if (Cesium.defined(pickedObject) && pickedObject.id && typeof pickedObject.id.id === 'string' && pickedObject.id.id.startsWith('obs_')) {
-        const obsId = pickedObject.id.id.replace('obs_', '');
-        const obs = obsRef.current.find(o => o.id === obsId);
-        if (obs) {
-          onSelectRef.current(obs);
+      if (Cesium.defined(pickedObject) && pickedObject.id && typeof pickedObject.id.id === 'string') {
+        const idStr = pickedObject.id.id;
+        if (idStr.startsWith('obs_')) {
+          const obsId = idStr.replace('obs_', '').split('_')[0];
+          const obs = obsRef.current.find(o => o.id === obsId);
+          if (obs) {
+            onObsSelectRef.current(obs);
+          }
+        } else if (idStr.startsWith('glider_')) {
+          const gId = idStr.replace('glider_', '').split('_')[0];
+          const glider = glidersRef.current.find(g => g.id === gId);
+          if (glider) {
+            setActiveGliderId(glider.id);
+            if (onGliderSelectRef.current) {
+              onGliderSelectRef.current(glider);
+            }
+          }
         }
       }
     }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
@@ -175,115 +213,293 @@ if (creditContainer instanceof HTMLElement) {
     };
   }, []);
 
-  // Update Model Layer
+  // Update Volumetric / Depth-Resolved Binary Model Layer
   useEffect(() => {
     const viewer = viewerRef.current;
     if (!viewer) return;
 
-    const layerId = 'model_data_layer';
+    const layerId = 'ocean_model_depth_slice';
     let entity = viewer.entities.getById(layerId);
 
-    if (showModelLayer) {
-      const canvas = generateHeatmapCanvas(activeVar);
-      
-      if (!entity) {
-        viewer.entities.add({
-          id: layerId,
-          rectangle: {
-            coordinates: REGIONS.INDIAN_OCEAN,
-            material: new Cesium.ImageMaterialProperty({
-              image: canvas,
-              transparent: true,
-              color: Cesium.Color.WHITE.withAlpha(0.75)
-            }),
-            height: -depth // Render at depth below surface
-          }
-        });
-      } else {
-        if (entity.rectangle) {
-          entity.rectangle.material = new Cesium.ImageMaterialProperty({
-            image: canvas,
-            transparent: true,
-            color: Cesium.Color.WHITE.withAlpha(0.75)
-          });
-          entity.rectangle.height = new Cesium.ConstantProperty(-depth);
-        }
-      }
-    } else {
-      if (entity) {
-        viewer.entities.remove(entity);
-      }
+    if (!showModelLayer) {
+      if (entity) viewer.entities.remove(entity);
+      return;
     }
-  }, [showModelLayer, activeVar, depth]);
 
-  // Update observations when they change
+    let isMounted = true;
+    setIsLoadingGrid(true);
+
+    // Fetch binary Float32Array slice from backend
+    fetchGridBinary(activeVar, depth, timestamp)
+      .then((gridData) => {
+        if (!isMounted || !viewerRef.current) return;
+        setIsLoadingGrid(false);
+        setDataStats({
+          min: gridData.min_value,
+          max: gridData.max_value,
+          unit: activeVar === 'temperature' ? '°C' : activeVar === 'salinity' ? 'PSU' : activeVar.includes('current') ? 'm/s' : ''
+        });
+
+        // Determine Colormap
+        let cmap: ColormapName = 'thermal';
+        if (activeVar === 'salinity') cmap = 'haline';
+        else if (activeVar.includes('current')) cmap = 'balance';
+        else if (activeVar === 'chlorophyll') cmap = 'algae';
+        else if (activeVar === 'dissolved_oxygen') cmap = 'dense';
+
+        const canvas = createColormapTexture(
+          gridData.buffer,
+          gridData.rows,
+          gridData.cols,
+          gridData.min_value,
+          gridData.max_value,
+          cmap,
+          210 // semi-transparent
+        );
+
+        const bounds = Cesium.Rectangle.fromDegrees(
+          gridData.lon_min,
+          gridData.lat_min,
+          gridData.lon_max,
+          gridData.lat_max
+        );
+
+        // Exaggerated negative depth
+        const renderedAltitude = -depth * verticalExaggeration;
+
+        if (!entity) {
+          viewer.entities.add({
+            id: layerId,
+            rectangle: {
+              coordinates: bounds,
+              material: new Cesium.ImageMaterialProperty({
+                image: canvas,
+                transparent: true
+              }),
+              height: renderedAltitude
+            }
+          });
+        } else {
+          if (entity.rectangle) {
+            entity.rectangle.coordinates = new Cesium.ConstantProperty(bounds);
+            entity.rectangle.material = new Cesium.ImageMaterialProperty({
+              image: canvas,
+              transparent: true
+            });
+            entity.rectangle.height = new Cesium.ConstantProperty(renderedAltitude);
+          }
+        }
+      })
+      .catch((err) => {
+        if (isMounted) setIsLoadingGrid(false);
+        console.warn("Failed to fetch binary grid layer:", err);
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [showModelLayer, activeVar, depth, timestamp, verticalExaggeration]);
+
+  // Render 3D Water-Column Argo Profiling Floats
   useEffect(() => {
     const viewer = viewerRef.current;
     if (!viewer) return;
 
-    // Remove existing observation entities
-    const entitiesToRemove = viewer.entities.values.filter(e => e.id.startsWith('obs_'));
-    entitiesToRemove.forEach(e => viewer.entities.remove(e));
+    // Clear old observation entities
+    const oldObs = viewer.entities.values.filter(e => e.id.startsWith('obs_'));
+    oldObs.forEach(e => viewer.entities.remove(e));
 
-    // Add new observations
-    observations.forEach(obs => {
+    if (!showArgoLayer) return;
+
+    observations.forEach((obs) => {
       const isSelected = obs.id === activeObservationId;
-      const hasDeviation = isSelected && comparison?.severity === 'significant';
-      
-      let color = Cesium.Color.fromCssColorString('#0ea5e9'); // Cyan/Blue
-      let outlineColor = Cesium.Color.fromCssColorString('#0284c7');
-      let size = 8;
+      const surfacePos = Cesium.Cartesian3.fromDegrees(obs.longitude, obs.latitude, 0);
+      const maxD = (obs.max_depth || 2000) * verticalExaggeration;
+      const bottomPos = Cesium.Cartesian3.fromDegrees(obs.longitude, obs.latitude, -maxD);
 
-      if (isSelected) {
-        color = Cesium.Color.fromCssColorString('#38bdf8'); // Bright cyan
-        outlineColor = Cesium.Color.WHITE;
-        size = 12;
-      }
-      
-      if (hasDeviation) {
-        outlineColor = Cesium.Color.fromCssColorString('#ef4444'); // Red warning ring
-      }
+      const floatColor = isSelected ? Cesium.Color.fromCssColorString('#38bdf8') : Cesium.Color.fromCssColorString('#0ea5e9');
+      const deviationAlert = isSelected && comparison?.severity === 'significant';
 
+      // 1. Surface Beacon Point
       viewer.entities.add({
-        id: `obs_${obs.id}`,
-        position: Cesium.Cartesian3.fromDegrees(obs.longitude, obs.latitude, 0),
+        id: `obs_${obs.id}_surface`,
+        position: surfacePos,
         point: {
-          pixelSize: size,
-          color: color,
-          outlineColor: outlineColor,
-          outlineWidth: isSelected ? 3 : 1,
-          disableDepthTestDistance: Number.POSITIVE_INFINITY // Always visible
+          pixelSize: isSelected ? 14 : 9,
+          color: floatColor,
+          outlineColor: deviationAlert ? Cesium.Color.fromCssColorString('#ef4444') : Cesium.Color.WHITE,
+          outlineWidth: isSelected ? 3 : 1.5,
+          disableDepthTestDistance: Number.POSITIVE_INFINITY
         },
         label: {
-          text: isSelected ? obs.id : '',
-          font: 'bold 12px sans-serif',
+          text: isSelected ? `ARGO ${obs.wmo || obs.id}` : '',
+          font: 'bold 11px sans-serif',
           fillColor: Cesium.Color.WHITE,
-          style: Cesium.LabelStyle.FILL,
-          showBackground: true,
-          backgroundColor: new Cesium.Color(0, 0, 0, 0.7),
+          style: Cesium.LabelStyle.FILL_AND_OUTLINE,
+          outlineWidth: 2,
+          outlineColor: Cesium.Color.BLACK,
           verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-          pixelOffset: new Cesium.Cartesian2(0, -20),
+          pixelOffset: new Cesium.Cartesian2(0, -18),
+          disableDepthTestDistance: Number.POSITIVE_INFINITY
+        }
+      });
+
+      // 2. 3D Vertical Water-Column Trajectory (from 0m down to depth)
+      viewer.entities.add({
+        id: `obs_${obs.id}_column`,
+        polyline: {
+          positions: [surfacePos, bottomPos],
+          width: isSelected ? 3 : 1.5,
+          material: new Cesium.PolylineDashMaterialProperty({
+            color: isSelected ? Cesium.Color.fromCssColorString('#38bdf8').withAlpha(0.9) : Cesium.Color.fromCssColorString('#0284c7').withAlpha(0.5),
+            dashLength: 12.0
+          })
+        }
+      });
+
+      // 3. Multi-depth sensor beads along the column
+      const sampleDepths = [100, 300, 500, 1000, 2000];
+      sampleDepths.forEach((d) => {
+        if (d <= (obs.max_depth || 2000)) {
+          const beadAlt = -d * verticalExaggeration;
+          viewer.entities.add({
+            id: `obs_${obs.id}_bead_${d}`,
+            position: Cesium.Cartesian3.fromDegrees(obs.longitude, obs.latitude, beadAlt),
+            point: {
+              pixelSize: isSelected && Math.abs(depth - d) < 50 ? 8 : 4,
+              color: isSelected && Math.abs(depth - d) < 50 ? Cesium.Color.fromCssColorString('#f97316') : Cesium.Color.fromCssColorString('#38bdf8').withAlpha(0.7),
+              outlineColor: Cesium.Color.BLACK,
+              outlineWidth: 1
+            }
+          });
+        }
+      });
+    });
+  }, [observations, activeObservationId, depth, verticalExaggeration, showArgoLayer, comparison]);
+
+  // Render 3D Autonomous Glider Sawtooth Trajectories
+  useEffect(() => {
+    const viewer = viewerRef.current;
+    if (!viewer) return;
+
+    // Clear old glider entities
+    const oldGliders = viewer.entities.values.filter(e => e.id.startsWith('glider_'));
+    oldGliders.forEach(e => viewer.entities.remove(e));
+
+    if (!showGlidersLayer) return;
+
+    gliders.forEach((glider) => {
+      const isSelected = glider.id === activeGliderId;
+      const waypoints = glider.waypoints || [];
+      if (waypoints.length === 0) return;
+
+      // Build 3D Sawtooth Polyline Coordinates
+      const positions = waypoints.map(w => 
+        Cesium.Cartesian3.fromDegrees(w.longitude, w.latitude, -w.depth * verticalExaggeration)
+      );
+
+      // 1. 3D Sawtooth Diving Track
+      viewer.entities.add({
+        id: `glider_${glider.id}_track`,
+        polyline: {
+          positions: positions,
+          width: isSelected ? 3.5 : 2.0,
+          material: new Cesium.PolylineGlowMaterialProperty({
+            glowPower: 0.25,
+            taperPower: 0.5,
+            color: isSelected ? Cesium.Color.fromCssColorString('#10b981') : Cesium.Color.fromCssColorString('#059669')
+          })
+        }
+      });
+
+      // 2. Current Glider Vehicle Marker
+      const latestWp = waypoints[waypoints.length - 1];
+      const gliderPos = Cesium.Cartesian3.fromDegrees(
+        latestWp.longitude, 
+        latestWp.latitude, 
+        -latestWp.depth * verticalExaggeration
+      );
+
+      viewer.entities.add({
+        id: `glider_${glider.id}_vehicle`,
+        position: gliderPos,
+        point: {
+          pixelSize: isSelected ? 12 : 9,
+          color: Cesium.Color.fromCssColorString('#34d399'),
+          outlineColor: Cesium.Color.WHITE,
+          outlineWidth: 2,
+          disableDepthTestDistance: Number.POSITIVE_INFINITY
+        },
+        label: {
+          text: `GLIDER: ${glider.mission_name.split(' ')[0]}`,
+          font: 'bold 10px monospace',
+          fillColor: Cesium.Color.fromCssColorString('#34d399'),
+          style: Cesium.LabelStyle.FILL_AND_OUTLINE,
+          outlineWidth: 2,
+          outlineColor: Cesium.Color.BLACK,
+          verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+          pixelOffset: new Cesium.Cartesian2(0, -16),
           disableDepthTestDistance: Number.POSITIVE_INFINITY
         }
       });
     });
-  }, [observations, activeObservationId, comparison]);
+  }, [gliders, activeGliderId, verticalExaggeration, showGlidersLayer]);
 
+  // Render 3D Current Velocity Vectors / Streamlines
+  useEffect(() => {
+    const viewer = viewerRef.current;
+    if (!viewer) return;
+
+    const oldCurrents = viewer.entities.values.filter(e => e.id.startsWith('current_vector_'));
+    oldCurrents.forEach(e => viewer.entities.remove(e));
+
+    if (!showCurrentsLayer) return;
+
+    // Sample vector arrows across key hydrodynamic currents
+    const currentNodes = [
+      { lat: 10.0, lon: 74.0, u: -0.6, v: -0.8, name: "West India Coastal Current" },
+      { lat: 14.0, lon: 84.0, u: 0.5, v: 0.9, name: "East India Coastal Current" },
+      { lat: 6.0, lon: 60.0, u: 1.1, v: 0.2, name: "Southwest Monsoon Current" },
+      { lat: 8.0, lon: 52.0, u: 0.9, v: 1.2, name: "Somali Jet Current" },
+      { lat: 15.0, lon: 88.0, u: -0.4, v: 0.6, name: "Bay of Bengal Eddy" },
+      { lat: 17.0, lon: 65.0, u: 0.6, v: -0.5, name: "Arabian Sea Gyre" }
+    ];
+
+    currentNodes.forEach((node, idx) => {
+      const startPos = Cesium.Cartesian3.fromDegrees(node.lon, node.lat, -depth * verticalExaggeration);
+      const endPos = Cesium.Cartesian3.fromDegrees(
+        node.lon + node.u * 1.5,
+        node.lat + node.v * 1.5,
+        -depth * verticalExaggeration
+      );
+
+      viewer.entities.add({
+        id: `current_vector_${idx}`,
+        polyline: {
+          positions: [startPos, endPos],
+          width: 2.5,
+          material: new Cesium.PolylineArrowMaterialProperty(
+            Cesium.Color.fromCssColorString('#facc15').withAlpha(0.85)
+          )
+        }
+      });
+    });
+  }, [showCurrentsLayer, depth, verticalExaggeration]);
+
+  // Imperative Camera Controls
   useImperativeHandle(ref, () => ({
     flyToRegion(regionKey: RegionKey) {
       const viewer = viewerRef.current;
       if (!viewer) return;
-      
-      const destination = REGIONS[regionKey];
-      if (!destination) return;
+      const target = REGIONS[regionKey] || REGIONS.INDIAN_OCEAN;
 
       viewer.camera.flyTo({
-        destination,
-        duration: 2.0,
+        destination: target.rect,
+        duration: 1.8,
         easingFunction: Cesium.EasingFunction.QUADRATIC_IN_OUT,
         orientation: {
-          heading: Cesium.Math.toRadians(0),
-          pitch: Cesium.Math.toRadians(-60), // More angled for 3D effect
+          heading: Cesium.Math.toRadians(target.heading),
+          pitch: Cesium.Math.toRadians(target.pitch),
           roll: 0.0
         }
       });
@@ -293,54 +509,93 @@ if (creditContainer instanceof HTMLElement) {
       if (!viewer) return;
 
       viewer.camera.flyTo({
-        destination: Cesium.Cartesian3.fromDegrees(lon, lat, 450000), // Zoom in
-        duration: 2.0,
+        destination: Cesium.Cartesian3.fromDegrees(lon, lat, 450000),
+        duration: 1.8,
         easingFunction: Cesium.EasingFunction.QUADRATIC_IN_OUT,
         orientation: {
           heading: Cesium.Math.toRadians(0),
-          pitch: Cesium.Math.toRadians(-60),
+          pitch: Cesium.Math.toRadians(-50),
+          roll: 0.0
+        }
+      });
+    },
+    focusGlider(lat: number, lon: number) {
+      const viewer = viewerRef.current;
+      if (!viewer) return;
+
+      viewer.camera.flyTo({
+        destination: Cesium.Cartesian3.fromDegrees(lon, lat, 380000),
+        duration: 1.8,
+        easingFunction: Cesium.EasingFunction.QUADRATIC_IN_OUT,
+        orientation: {
+          heading: Cesium.Math.toRadians(15),
+          pitch: Cesium.Math.toRadians(-45),
           roll: 0.0
         }
       });
     }
   }));
 
-  const activeObsDetails = useMemo(() => {
-    return observations.find(o => o.id === activeObservationId);
-  }, [observations, activeObservationId]);
+  const activeObsDetails = observations.find(o => o.id === activeObservationId);
 
   return (
-    <div className="absolute inset-0 z-0 w-full h-full bg-[#020813]">
+    <div className="absolute inset-0 z-0 w-full h-full bg-[#020610]">
       <div ref={containerRef} className="w-full h-full" />
-      
-      {/* Absolute Overlays on top of the map */}
-      <div className="absolute top-24 left-1/2 -translate-x-1/2 pointer-events-none z-10 text-center drop-shadow-md">
-        <h2 className="text-xl font-black tracking-widest text-white/90 uppercase">
-          MODEL {activeVar === 'temperature' ? 'TEMPERATURE' : 'SALINITY'}
-        </h2>
-        <p className="text-[#38bdf8] font-mono font-bold">{depth} m DEPTH</p>
+
+      {/* Loading Spinner for Binary Slices */}
+      {isLoadingGrid && (
+        <div className="absolute top-20 right-1/2 translate-x-1/2 z-20 flex items-center gap-2 bg-slate-900/90 border border-[#38bdf8]/40 px-4 py-2 rounded-full backdrop-blur-md shadow-2xl">
+          <div className="w-3.5 h-3.5 border-2 border-[#38bdf8] border-t-transparent rounded-full animate-spin"></div>
+          <span className="text-xs font-mono text-[#38bdf8] font-semibold tracking-wider uppercase">Streaming Float32 Grid Slice...</span>
+        </div>
+      )}
+
+      {/* Floating HUD: Depth & Variable Indicator */}
+      <div className="absolute top-20 left-1/2 -translate-x-1/2 pointer-events-none z-10 text-center drop-shadow-lg">
+        <div className="bg-slate-950/80 border border-slate-700/60 px-5 py-2 rounded-xl backdrop-blur-md inline-block">
+          <div className="flex items-center gap-2 justify-center">
+            <span className="w-2 h-2 rounded-full bg-[#38bdf8] animate-pulse"></span>
+            <h2 className="text-xs font-black tracking-widest text-white/90 uppercase">
+              {activeVar.replace('_', ' ')} • {depth}m DEPTH LEVEL
+            </h2>
+          </div>
+          <p className="text-[10px] text-slate-400 font-mono mt-0.5">
+            Vertical Exaggeration: <span className="text-[#38bdf8] font-bold">{verticalExaggeration}×</span>
+            {dataStats && ` | Range: ${dataStats.min.toFixed(1)} to ${dataStats.max.toFixed(1)} ${dataStats.unit}`}
+          </p>
+        </div>
       </div>
 
-      {/* Floating Tooltip connected to the active marker */}
-      {/* Since tracking HTML element to Cesium point is complex for MVP, we position it fixed but style it like a floating tooltip */}
+      {/* Active Observation Quick Inspection Overlay */}
       {activeObsDetails && comparison && (
-        <div className="absolute top-1/2 left-1/2 ml-16 -mt-16 pointer-events-none z-10 bg-slate-900/90 border border-slate-700/80 p-3 rounded-lg shadow-xl backdrop-blur-sm">
-          <div className="text-xs font-bold text-white mb-1">{activeObservationId}</div>
-          <div className="text-[10px] text-slate-400 font-mono mb-2">{depth} m</div>
+        <div className="absolute bottom-24 right-6 pointer-events-none z-10 bg-slate-950/90 border border-cyan-500/40 p-4 rounded-xl shadow-2xl backdrop-blur-md w-72">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-xs font-bold text-white font-mono">{activeObservationId}</span>
+            <span className={`text-[9px] font-bold uppercase px-2 py-0.5 rounded border ${
+              comparison.severity === 'significant' ? 'bg-red-500/20 text-red-400 border-red-500/40' :
+              comparison.severity === 'moderate' ? 'bg-orange-500/20 text-orange-400 border-orange-500/40' :
+              'bg-emerald-500/20 text-emerald-400 border-emerald-500/40'
+            }`}>
+              {comparison.status}
+            </span>
+          </div>
           
-          <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-xs">
-            <div className="text-slate-400">Model:</div>
-            <div className="font-mono text-slate-200 text-right">{comparison.model_value}{activeVar === 'temperature' ? '°C' : ''}</div>
-            
-            <div className="text-slate-400">Observed:</div>
-            <div className="font-mono text-[#38bdf8] text-right">{comparison.observed_value}{activeVar === 'temperature' ? '°C' : ''}</div>
-            
-            <div className="col-span-2 h-px bg-slate-700 my-0.5"></div>
-            
-            <div className="text-slate-400 font-bold">Δ</div>
-            <div className={`font-mono text-right font-bold ${comparison.severity === 'significant' ? 'text-[#ef4444]' : 'text-slate-200'}`}>
-              {comparison.difference > 0 ? '+' : ''}{comparison.difference}
+          <div className="grid grid-cols-2 gap-2 text-xs font-mono">
+            <div className="bg-slate-900/80 p-2 rounded border border-slate-800">
+              <span className="text-[10px] text-slate-400 block uppercase">Model ({depth}m)</span>
+              <span className="text-slate-100 font-bold">{comparison.model_value} {comparison.unit}</span>
             </div>
+            <div className="bg-slate-900/80 p-2 rounded border border-slate-800">
+              <span className="text-[10px] text-slate-400 block uppercase">Argo Observed</span>
+              <span className="text-[#38bdf8] font-bold">{comparison.observed_value} {comparison.unit}</span>
+            </div>
+          </div>
+
+          <div className="mt-2 text-[10px] text-slate-400 flex justify-between border-t border-slate-800 pt-2 font-mono">
+            <span>Column RMSE: <strong className="text-white">{comparison.column_rmse}</strong></span>
+            <span>Δ: <strong className={comparison.severity === 'significant' ? 'text-red-400' : 'text-slate-200'}>
+              {comparison.difference > 0 ? '+' : ''}{comparison.difference} {comparison.unit}
+            </strong></span>
           </div>
         </div>
       )}

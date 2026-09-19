@@ -19,4 +19,18 @@ export default defineConfig({
       },
     },
   },
-})
+  build: {
+    sourcemap: false,
+    chunkSizeWarningLimit: 3000,
+    rollupOptions: {
+      output: {
+        manualChunks: (id: string) => {
+          if (id.includes('cesium')) return 'vendor-cesium';
+          if (id.includes('@deck.gl') || id.includes('luma.gl') || id.includes('@luma.gl')) return 'vendor-deckgl';
+          if (id.includes('recharts') || id.includes('d3-')) return 'vendor-recharts';
+          if (id.includes('node_modules')) return 'vendor';
+        },
+      },
+    },
+  },
+})
